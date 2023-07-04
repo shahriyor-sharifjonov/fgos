@@ -1,0 +1,102 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__nav{
+        @include res('border-radius', 15px);
+        background: #fff;
+        @include res('height', 68px);
+        @include res('padding-left', 12px);
+        @include res('padding-right', 30px);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        @include res('min-width', 188px);
+        @include res('width', 188px);
+        @include res('height', 49px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg,img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text{
+        color: rgba(0, 0, 0, 0.50);
+        @include res('font-size', 10px);
+        font-family: Gilroy;
+        font-style: normal;
+        @include res('max-width', 633px);
+        font-weight: 400;
+        @include res('margin-bottom', 4px);
+        b,span{
+            @include res('font-size', 12px);
+            @include res('line-height', 14px);
+            font-weight: 700;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 15px);
+    }
+    &__link{
+        color: #FFF;
+        @include res('font-size', 12px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 12px);
+        @include res('padding-top', 4px);
+        @include res('padding-bottom', 4px);
+        @include res('padding-left', 10px);
+        @include res('padding-right', 10px);
+        @include res('border-radius', 5px);
+        text-decoration: none;
+        background: #325CFE;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-p{
+            color: #1A1A1B;
+            @include res('margin-top', -3px);
+            @include res('font-size', 10px);
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 22px);
+        }
+    }
+    &__tel{
+        color: #454545;
+        @include res('font-size', 20px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 27px);
+        text-decoration-line: underline;
+    }
+    &__cabinet{
+        color: #325CFE;
+        @include res('font-size', 12px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 12px);
+        text-decoration: none;
+    }
+}

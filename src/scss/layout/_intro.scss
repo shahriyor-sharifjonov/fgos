@@ -1,0 +1,35 @@
+.intro{
+    position: relative;
+    isolation: isolate;
+    @include res('padding-top', 84px);
+    &__bg{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        @include res('width', 1600px);
+        @include res('height', 711px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__breadcrumbs{
+        @include res('min-height', 22px);
+    }
+    &__title{
+        @include res('padding-top', 18px);
+        @include res('max-width', 600px);
+        color: #FFF;
+        @include res('font-size', 40px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 800;
+        @include res('line-height', 54px);
+    }
+}
