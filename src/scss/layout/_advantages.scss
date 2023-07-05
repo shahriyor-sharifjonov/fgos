@@ -1,0 +1,19 @@
+.advantages{
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    &__item{
+        border-radius: 30px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
+        @include res('width', calc(50% - 13px));
+        @include res('padding',);
+        &:nth-of-type(odd){
+            @include res('max-width', 612px);
+            @include res('width', 100%);
+        }
+    }
+}
