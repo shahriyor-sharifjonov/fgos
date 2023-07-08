@@ -120,7 +120,7 @@
             @include res('margin-bottom', 7px);
             @include media(575){
                 @include resa('font-size', 21px);
-                @include resa('line-height', 34px);
+                line-height: 120%;
                 margin-bottom: 0;
             }
         }
