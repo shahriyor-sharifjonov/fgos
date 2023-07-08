@@ -4,6 +4,7 @@
     @include res('margin-top', -36px);
     @include media(575){
         @include resa('padding-bottom', 30px);
+        margin-top: 0;
     }
     &__content{
         display: flex;
@@ -39,21 +40,21 @@
         color: #325CFE;
         text-align: center;
         font-family: Gilroy;
-        font-size: 10px;
+        @include resa('font-size', 10px);
         font-style: normal;
         font-weight: 800;
         line-height: normal;
         text-transform: uppercase;
-        margin-bottom: 2px;
+        @include resa('margin-bottom', 2px);
     }
     &__p{
         color: rgba(0, 0, 0, 0.80);
         text-align: center;
         font-family: Gilroy;
-        font-size: 8px;
+        @include resa('font-size', 8px);
         font-style: normal;
         font-weight: 300;
-        line-height: 14px;
+        @include resa('line-height', 14px);
     }
     &__top{
         display: flex;
