@@ -129,6 +129,7 @@
         text-transform: uppercase;
         @include media(575){
             @include resa('font-size', 16px);
+            @include res('line-height', 22px);
         }
     }
     &__desc{
