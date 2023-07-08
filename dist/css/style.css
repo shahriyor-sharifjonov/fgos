@@ -222,7 +222,7 @@
   font-family: Gilroy;
   font-style: normal;
   max-width: 32.96875vw;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.2083333333vw;
 }
 
@@ -356,6 +356,47 @@
   font-style: normal;
   font-weight: 800;
   line-height: 2.8125vw;
+  margin-bottom: 0.5729166667vw;
+}
+
+.intro__p {
+  color: #B8B8B8;
+  font-size: 0.8333333333vw;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1458333333vw;
+  max-width: 29.84375vw;
+  margin-bottom: 1.9791666667vw;
+}
+
+.intro__btn {
+  padding-top: 1.0416666667vw;
+  padding-bottom: 1.0416666667vw;
+  padding-left: 1.0416666667vw;
+  padding-right: 1.0416666667vw;
+  border-radius: 0.5208333333vw;
+  height: 3.125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: #325CFE;
+  color: #FFF;
+  font-size: 1.0416666667vw;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 120%;
 }
 
 * {

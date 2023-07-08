@@ -37,7 +37,7 @@
         font-family: Gilroy;
         font-style: normal;
         @include res('max-width', 633px);
-        font-weight: 400;
+        font-weight: 500;
         @include res('margin-bottom', 4px);
         b,span{
             @include res('font-size', 12px);

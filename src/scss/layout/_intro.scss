@@ -31,5 +31,36 @@
         font-style: normal;
         font-weight: 800;
         @include res('line-height', 54px);
+        @include res('margin-bottom', 11px);
+    }
+    &__p{
+        color: #B8B8B8;
+        @include res('font-size', 16px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 22px);
+        @include res('max-width', 573px);
+        @include res('margin-bottom', 38px);
+    }
+    &__btn{
+        @include res('padding-top', 20px);
+        @include res('padding-bottom', 20px);
+        @include res('padding-left', 20px);
+        @include res('padding-right', 20px);
+        @include res('border-radius', 10px);
+        @include res('height', 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        background: #325CFE;
+        color: #FFF;
+        @include res('font-size', 20px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 120%;
     }
 }
