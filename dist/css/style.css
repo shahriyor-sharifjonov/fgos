@@ -1105,7 +1105,10 @@ body {
 }
 
 body.home {
-  background: url("../img/home-bg.png") top center/cover no-repeat;
+  background: url("../img/home-bg.png"), #F4F6F8;
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
