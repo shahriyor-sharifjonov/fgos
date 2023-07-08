@@ -1,19 +1,166 @@
 .advantages{
-    &__body{
+    @include res('padding-bottom', 20px);
+    @include media(575){
+        @include resa('padding-bottom', 30px);
+    }
+    &__content{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: stretch;
     }
-    &__item{
-        border-radius: 30px;
-        background: #FFF;
-        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
-        @include res('width', calc(50% - 13px));
-        @include res('padding',);
-        &:nth-of-type(odd){
-            @include res('max-width', 612px);
-            @include res('width', 100%);
+    &__wrapper{
+        display: none;
+        padding-top: 15px;
+        padding-bottom: 11px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        isolation: isolate;
+        margin-bottom: 15px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: calc(100% + 28px);
+            left: -15px;
+            right: -15px;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+        }
+        @include media(575){
+           display: flex;
         }
     }
-}
+    &__title{
+        color: #325CFE;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+    &__p{
+        color: rgba(0, 0, 0, 0.80);
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 14px;
+    }
+    &__top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__discount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #1651E9;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        @include res('font-size', 26px);
+        @include media(575){
+            @include resa('font-size', 20px);
+        }
+        span{
+            color: #555;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: line-through;
+            @include res('font-size', 24px);
+            @include media(575){
+                @include resa('font-size', 16px);
+            }
+        }
+    }
+    &__item{
+        @include res('border-radius', 30px);
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
+        @include res('width', 544px);
+        @include res('padding-top', 34px);
+        @include res('padding-right', 40px);
+        @include res('padding-bottom', 40px);
+        @include res('padding-left', 34px);
+        @include media(575){
+            @include resa('max-width', 560px);
+            @include resa('width', 560px);
+            @include resa('padding-top', 20px);
+            @include resa('padding-right', 20px);
+            @include resa('padding-bottom', 22px);
+            @include resa('padding-left', 22px);
+            @include resa('border-radius', 30px);
+        }
+        &:nth-of-type(2),
+        &:nth-of-type(3){ 
+            @include res('max-width', 612px);
+            width: 100%; 
+            @include media(575){
+                @include resa('max-width', 560px);
+            }
+        }
+        &:nth-of-type(1), &:nth-of-type(2){
+            @include res('margin-bottom', 26px);
+            @include media(575){
+                @include resa('margin-bottom', 12px);
+            }
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-bottom', 12px);
+            }
+        }
+    }
+    &__subtitle{
+        color: #282828;
+        @include res('font-size', 28px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 800;
+        margin-bottom: 7px;
+        @include res('line-height', 36px);
+        @include res('margin-bottom', 7px);
+        @include media(575){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 22px);
+        }
+    }
+    &__desc{
+        color: #000;
+        @include res('font-size', 16px);
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 300;
+        @include res('line-height', 22px);
+        @include res('margin-bottom', 23px);
+        @include media(575){
+            @include resa('font-size', 10px);
+            @include resa('line-height', 14px);
+        }
+        span{
+            font-weight: 600;
+        }
+    }
+    &__link{
+        color: #325CFE;
+        font-family: Gilroy;
+        font-size: 20px;
+        @include res('font-size', 20px);
+        @include res('line-height', 22px);
+        font-style: normal;
+        font-weight: 500;
+        text-decoration-line: underline;
+        @include media(575){
+            @include resa('font-size', 12px);
+        }
+    }
+} 
