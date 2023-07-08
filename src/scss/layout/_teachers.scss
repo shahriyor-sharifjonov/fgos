@@ -1,0 +1,150 @@
+.teachers{
+    @include res('padding-top', 55px);
+    @include res('padding-bottom', 24px);
+    @include media(575){
+        @include resa('padding-top', 26px);
+        @include resa('padding-bottom', 22px);
+    }
+    overflow-x: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/teachers-bg.png) center / cover no-repeat;
+        top: 0;
+        @include res('height', 220px);
+        @include res('width', 1650px);
+        left: 0;
+        z-index: -1;
+        @include media(575){
+            @include resa('height', 143px);
+            @include resa('width', 580px);
+        }
+    }
+    &__title{
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 34px;
+        @include res('font-size', 34px);
+        @include res('line-height', 54px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('margin-bottom', 78px);
+        @include res('max-width', 1100px);
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 22px);
+            @include resa('margin-bottom', 50px);
+        }
+        span{
+            color: #325CFE;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        position: relative;
+        @include media(575){
+            flex-direction: column;
+        }
+        &:not(:last-of-type){
+            @include res('margin-bottom', 26px);
+            @include media(575){
+                @include resa('margin-bottom', 18px);
+            }
+        }
+    }
+    &__item{
+        @include res('border-radius', 30px);
+        background: #FFF;
+        @include res('padding-top', 26px);
+        @include res('padding-right', 40px);
+        @include res('padding-bottom', 28px);
+        @include res('padding-left', 30px);
+        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
+        @include res('max-width', 580px);
+        @include media(575){
+            @include resa('max-width', 560px);
+            @include resa('padding-top', 16px);
+            @include resa('padding-right', 20px);
+            @include resa('padding-bottom', 20px);
+            @include resa('padding-left', 18px);
+        }
+        &:last-of-type{
+            @include media(575){
+                @include resa('margin-top', 18px);
+            }
+        }
+    }
+    &__image{
+        position: absolute;
+        @include res('right', 80px);
+        @include res('bottom', -26px);
+        @include res('height', 450px);
+        line-height: 0;
+        @include media(575){
+            @include resa('top', -120px);
+            @include resa('height', 120px);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            line-height: 0;
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 18px);
+        @include media(575){
+            @include resa('margin-bottom', 10px);
+        }
+    }
+    &__img{
+        @include res('margin-right', 15px);
+        @include res('max-width', 80px);
+        @include res('min-width', 80px);
+        @include res('max-height', 80px);
+        @include media(575){
+            @include resa('margin-right', 10px);
+            @include resa('max-width', 45px);
+            @include resa('max-height', 45px);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__subtitle{
+        color: #000;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        @include res('font-size', 28px);
+        @include res('line-height', 53px);
+        text-transform: uppercase;
+        @include media(575){
+            @include resa('font-size', 16px);
+        }
+    }
+    &__desc{
+        color: #000;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 300;
+        @include res('line-height', 26px);
+        @include res('font-size', 18px);
+        &:not(:last-of-type){
+            @include res('margin-bottom', 18px);
+            @include media(575){
+                @include resa('margin-bottom', 8px);
+            }
+        }
+        @include media(575){
+            @include resa('font-size', 10px);
+            @include resa('line-height', 14px);
+        }
+    }
+}
