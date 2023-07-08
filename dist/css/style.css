@@ -329,6 +329,7 @@
   position: relative;
   isolation: isolate;
   padding-top: 4.375vw;
+  padding-bottom: 6.1458333333vw;
 }
 
 .intro__bg {
@@ -386,6 +387,27 @@
   margin-bottom: 1.9791666667vw;
 }
 
+.intro__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.0416666667vw;
+}
+
+.intro__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.2083333333vw;
+}
+
 .intro__btn {
   padding-top: 1.0416666667vw;
   padding-bottom: 1.0416666667vw;
@@ -413,10 +435,58 @@
   font-weight: 700;
   text-decoration: none;
   line-height: 120%;
+  -webkit-transition: background 300ms ease-out;
+  -o-transition: background 300ms ease-out;
+  transition: background 300ms ease-out;
+}
+
+.intro__btn:hover {
+  background: #4b70fe;
+}
+
+.intro__btn-p {
+  color: #989898;
+  text-align: center;
+  font-size: 0.7291666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.8333333333vw;
+}
+
+.intro__cabinet {
+  height: 3.125vw;
+  padding-left: 1.25vw;
+  padding-right: 1.25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.4166666667vw;
+  color: #FFF;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1458333333vw;
+  text-decoration: none;
+  border-radius: 0.5208333333vw;
+  border: solid #325CFE;
+  border-width: 0.0520833333vw;
+}
+
+.intro__cabinet svg {
+  width: 1.3020833333vw;
+  height: 1.3020833333vw;
 }
 
 .advantages {
   padding-bottom: 1.0416666667vw;
+  position: relative;
+  margin-top: -1.875vw;
 }
 
 .advantages__content {
@@ -527,13 +597,20 @@
 .advantages__item {
   border-radius: 1.5625vw;
   background: #FFF;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
-          box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
+  -webkit-box-shadow: 0px 0px 0.5208333333vw 0px rgba(2, 2, 2, 0.1);
+          box-shadow: 0px 0px 0.5208333333vw 0px rgba(2, 2, 2, 0.1);
   width: 28.3333333333vw;
   padding-top: 1.7708333333vw;
   padding-right: 2.0833333333vw;
   padding-bottom: 2.0833333333vw;
   padding-left: 1.7708333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .advantages__item:nth-of-type(2),
@@ -642,8 +719,8 @@
   padding-right: 2.0833333333vw;
   padding-bottom: 1.4583333333vw;
   padding-left: 1.5625vw;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
-          box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
+  -webkit-box-shadow: 0px 0px 0.5208333333vw 0px rgba(2, 2, 2, 0.1);
+          box-shadow: 0px 0px 0.5208333333vw 0px rgba(2, 2, 2, 0.1);
   max-width: 30.2083333333vw;
 }
 
@@ -1033,13 +1110,15 @@ ul {
   }
 
   .advantages__item {
+    -webkit-box-shadow: 0 0 1.6666666667vw 0 rgba(2, 2, 2, 0.1);
+            box-shadow: 0 0 1.6666666667vw 0 rgba(2, 2, 2, 0.1);
     max-width: 155.5555555556vw;
     width: 155.5555555556vw;
     padding-top: 5.5555555556vw;
     padding-right: 5.5555555556vw;
     padding-bottom: 6.1111111111vw;
     padding-left: 6.1111111111vw;
-    border-radius: 8.3333333333vw;
+    border-radius: 5vw;
   }
 
   .advantages__item:nth-of-type(2),
@@ -1098,6 +1177,9 @@ ul {
   }
 
   .teachers__item {
+    border-radius: 5vw;
+    -webkit-box-shadow: 0px 0px 1.5555555556vw 0px rgba(2, 2, 2, 0.1);
+            box-shadow: 0px 0px 1.5555555556vw 0px rgba(2, 2, 2, 0.1);
     max-width: 155.5555555556vw;
     padding-top: 4.4444444444vw;
     padding-right: 5.5555555556vw;
@@ -1282,6 +1364,7 @@ ul {
     padding-left: 4.7222222222vw;
     padding-right: 5.5555555556vw;
     padding-bottom: 6.6666666667vw;
+    border-radius: 5vw;
   }
 
   .training__card:nth-of-type(2) {

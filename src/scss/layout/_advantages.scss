@@ -1,5 +1,7 @@
 .advantages{
     @include res('padding-bottom', 20px);
+    position: relative;
+    @include res('margin-top', -36px);
     @include media(575){
         @include resa('padding-bottom', 30px);
     }
@@ -85,20 +87,23 @@
     &__item{
         @include res('border-radius', 30px);
         background: #FFF;
-        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
+        box-shadow: 0px 0px 0.5208333333vw 0px rgba(2, 2, 2, 0.10);
         @include res('width', 544px);
         @include res('padding-top', 34px);
         @include res('padding-right', 40px);
         @include res('padding-bottom', 40px);
         @include res('padding-left', 34px);
+        display: flex;
+        flex-direction: column;
         @include media(575){
+            box-shadow: 0 0 1.6666666667vw 0 rgba(2, 2, 2, 0.10);
             @include resa('max-width', 560px);
             @include resa('width', 560px);
             @include resa('padding-top', 20px);
             @include resa('padding-right', 20px);
             @include resa('padding-bottom', 22px);
             @include resa('padding-left', 22px);
-            @include resa('border-radius', 30px);
+            @include resa('border-radius', 18px);
         }
         &:nth-of-type(2),
         &:nth-of-type(3){ 

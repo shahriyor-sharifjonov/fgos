@@ -258,6 +258,7 @@
             @include resa('padding-left', 17px);
             @include resa('padding-right', 20px);
             @include resa('padding-bottom', 24px);
+            @include resa('border-radius', 18px);
         }
         &:nth-of-type(2){
             @include res('margin-left', 20px);

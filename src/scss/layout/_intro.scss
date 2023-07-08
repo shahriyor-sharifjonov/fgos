@@ -2,6 +2,7 @@
     position: relative;
     isolation: isolate;
     @include res('padding-top', 84px);
+    @include res('padding-bottom', 118px);
     &__bg{
         z-index: -1;
         position: absolute;
@@ -43,6 +44,16 @@
         @include res('max-width', 573px);
         @include res('margin-bottom', 38px);
     }
+    &__row{
+        display: flex;
+        @include res('gap', 20px);
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include res('gap', 4px);
+    }
     &__btn{
         @include res('padding-top', 20px);
         @include res('padding-bottom', 20px);
@@ -62,5 +73,39 @@
         font-weight: 700;
         text-decoration: none;
         line-height: 120%;
+        transition: background 300ms ease-out;
+        &:hover{
+            background: lighten($color: #325CFE, $amount: 5);
+        }
+        &-p{
+            color: #989898;
+            text-align: center;
+            @include res('font-size', 14px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 16px);
+        }
+    }
+    &__cabinet{
+        @include res('height', 60px);
+        @include res('padding-left', 24px);
+        @include res('padding-right', 24px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 8px);
+        color: #FFF;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 22px);
+        text-decoration: none;
+        @include res('border-radius', 10px);
+        border: solid #325CFE;
+        @include res('border-width', 1px);
+        svg{
+            @include res('width', 25px);
+            @include res('height', 25px);
+        }
     }
 }
