@@ -190,6 +190,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 3.5416666667vw;
+  -webkit-transition: background 300ms ease-out, height 300ms ease-out;
+  -o-transition: background 300ms ease-out, height 300ms ease-out;
+  transition: background 300ms ease-out, height 300ms ease-out;
+}
+
+.header.fixed {
+  background: #fff;
+  height: 3.125vw;
+}
+
+.header.fixed .header__nav {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header.fixed .header__text {
+  display: none;
+}
+
+.header.fixed .header__right {
+  display: none;
 }
 
 .header__nav {
@@ -209,6 +231,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 
 .header__logo {
@@ -323,6 +346,14 @@
   font-weight: 700;
   line-height: 0.625vw;
   text-decoration: none;
+}
+
+.header__mob {
+  display: none;
+}
+
+.header__btn {
+  display: none;
 }
 
 .intro {
@@ -1111,6 +1142,48 @@ ul {
 
   .header__right {
     display: none;
+  }
+
+  .header__cabinet svg {
+    width: 6.9444444444vw;
+    height: 6.9444444444vw;
+  }
+
+  .header__mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 3.3333333333vw;
+  }
+
+  .header__btn {
+    display: block;
+    width: 6.9444444444vw;
+    height: 6.9444444444vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 1.6666666667vw;
+    background: -webkit-gradient(linear, left top, left bottom, from(#325CFE), color-stop(99.99%, #022197), to(#1651E9));
+    background: -o-linear-gradient(top, #325CFE 0%, #022197 99.99%, #1651E9 100%);
+    background: linear-gradient(180deg, #325CFE 0%, #022197 99.99%, #1651E9 100%);
+  }
+
+  .header__btn svg {
+    width: 4.7222222222vw;
+    height: 3.3333333333vw;
   }
 
   .intro {
