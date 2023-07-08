@@ -532,9 +532,9 @@
 .advantages__wrapper::before {
   content: "";
   position: absolute;
-  width: calc(100% + 28px);
-  left: -15px;
-  right: -15px;
+  width: 100vw;
+  left: -4.1666666667vw;
+  right: -4.1666666667vw;
   height: 100%;
   background: #fff;
   z-index: -1;
@@ -1092,6 +1092,32 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .header__nav {
+    height: 12.5vw;
+    border-radius: 0;
+    max-width: 100% !important;
+    padding-right: 4.1666666667vw;
+    padding-left: 4.1666666667vw;
+  }
+
+  .header__logo {
+    width: 35vw;
+    height: 9.2592592593vw;
+  }
+
+  .header__mid {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .intro {
+    padding-top: 15.2777777778vw;
+    padding-bottom: 8.3333333333vw;
+  }
+
   .intro__bg {
     display: none;
   }

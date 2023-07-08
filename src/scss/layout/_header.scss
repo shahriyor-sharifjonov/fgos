@@ -18,6 +18,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include media(576){
+            @include resa('height', 45px);
+            border-radius: 0;
+            max-width: 100% !important;
+            @include resa('padding-right', 15px);
+            @include resa('padding-left', 15px);
+        }
     }
     &__logo{
         @include res('min-width', 188px);
@@ -26,9 +33,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include media(576){
+            @include resa('width', 126px);
+            @include resa('height', 33.3333333333px);
+        }
         svg,img{
             width: 100%;
             height: 100%;
+        }
+    }
+    &__mid{
+        @include media(576){
+            display: none;
         }
     }
     &__text{
@@ -71,6 +87,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include media(576){
+            display: none;
+        }
         &-p{
             color: #1A1A1B;
             @include res('margin-top', -3px);

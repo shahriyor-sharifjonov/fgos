@@ -3,6 +3,10 @@
     isolation: isolate;
     @include res('padding-top', 84px);
     @include res('padding-bottom', 118px);
+    @include media(576){
+        @include resa('padding-top', 55px);
+        @include resa('padding-bottom', 30px);
+    }
     &__bg{
         z-index: -1;
         position: absolute;
