@@ -14,10 +14,14 @@
         @include res('width', 1050px);
         background: url(../img/training-before.png) left / cover no-repeat;
         z-index: -1;
+        @include res('border-start-start-radius', 30px);
+        @include res('border-end-start-radius', 30px);
         @include media(575){
             @include resa('height', 335px);
             @include resa('width', 345px);
             @include resa('left', 15px);
+            @include resa('border-start-start-radius', 18px);
+            @include resa('border-end-start-radius', 18px);
             right: 0;
         }
     }

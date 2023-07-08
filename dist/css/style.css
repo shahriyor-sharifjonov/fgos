@@ -726,12 +726,14 @@
 .teachers::before {
   content: "";
   position: absolute;
-  background: url(../img/teachers-bg.png) center/cover no-repeat;
+  background: url("../img/teachers-bg.png") center/cover no-repeat;
   top: 0;
   height: 11.4583333333vw;
   width: 85.9375vw;
   left: 0;
   z-index: -1;
+  border-start-end-radius: 1.5625vw;
+  border-end-end-radius: 1.5625vw;
 }
 
 .teachers__title {
@@ -855,6 +857,8 @@
   width: 54.6875vw;
   background: url(../img/training-before.png) left/cover no-repeat;
   z-index: -1;
+  border-start-start-radius: 1.5625vw;
+  border-end-start-radius: 1.5625vw;
 }
 
 .training__row {
@@ -1098,6 +1102,10 @@ html {
 body {
   background: #F4F6F8;
   overflow-x: hidden;
+}
+
+body.home {
+  background: url("../img/home-bg.png") top center/cover no-repeat;
 }
 
 .wrapper {
@@ -1419,7 +1427,9 @@ ul {
 
   .teachers::before {
     height: 39.7222222222vw;
-    width: 161.1111111111vw;
+    width: 100vw;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
   }
 
   .teachers__title {
@@ -1491,6 +1501,8 @@ ul {
     height: 93.0555555556vw;
     width: 95.8333333333vw;
     left: 4.1666666667vw;
+    border-start-start-radius: 5vw;
+    border-end-start-radius: 5vw;
     right: 0;
   }
 

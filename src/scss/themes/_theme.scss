@@ -18,6 +18,9 @@ html{
 body{
     background: #F4F6F8;
     overflow-x: hidden;
+    &.home{
+        background: url('../img/home-bg.png') top center / cover no-repeat;
+    }
 }
 .wrapper{
     width: 100%;
