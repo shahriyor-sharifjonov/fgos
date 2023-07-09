@@ -976,8 +976,19 @@
 .teachers {
   padding-top: 2.8645833333vw;
   padding-bottom: 1.25vw;
-  overflow-x: hidden;
   position: relative;
+}
+
+.teachers__second {
+  margin-top: -8.9583333333vw;
+}
+
+.teachers__second::before {
+  display: none;
+}
+
+.teachers__second .teachers__image {
+  right: 8.3333333333vw;
 }
 
 .teachers::before {

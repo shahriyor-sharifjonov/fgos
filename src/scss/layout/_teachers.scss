@@ -5,8 +5,16 @@
         @include resa('padding-top', 26px);
         @include resa('padding-bottom', 22px);
     }
-    overflow-x: hidden;
     position: relative;
+    &__second{
+        @include res('margin-top', -172px);
+        &::before{
+            display: none;
+        }
+        .teachers__image{
+            @include res('right', 160px);
+        }
+    }
     &::before{
         content: '';
         position: absolute;
