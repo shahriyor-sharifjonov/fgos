@@ -1,0 +1,101 @@
+.documents{
+    @include res('padding-bottom', 30px);
+    @include res('padding-top', 44px);
+    position: relative;
+    isolation: isolate;
+    @include media(575){
+        @include resa('padding-top', 15px);
+        @include resa('padding-top', 20px);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        @include res('height', 220px);
+        background: url(../img/training-before.png) center / cover no-repeat;
+        z-index: -1;
+        @include media(575){
+            @include resa('height', 93px);
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include res('width', 1550px);
+        @include res('height', 230px);
+        background: url(../img/training-before.png) center / cover no-repeat;
+        z-index: -1;
+        border-radius: 0px 1.563vw 1.563vw 0px;
+        @include media(575){
+            @include resa('height', 96px);
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+    &__title{
+        color: #FFF;
+        text-align: center;
+        @include res('font-size', 40px);
+        @include res('line-height', 54px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('margin-bottom', 23px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            @include resa('margin-bottom', 20px);
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        @include media(575){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        &:first-of-type{
+            .documents__subtitle{
+                @include media(575){
+                    color: #010101;
+                }
+            }
+            @include res('margin-right', 30px);
+            @include media(575){
+                margin-right: 0;
+                @include resa('margin-bottom', 20px);
+            }
+        }
+    }
+    &__img{
+        @include res('max-width', 525px);
+        width: 100%;
+        line-height: 0;
+        @include res('margin-bottom', 10px);
+        @include media(575){
+            max-width: 100%;
+            @include resa('margin-bottom', 3px);
+        }
+        img{
+            width: 100%;
+            @include res('border-radius', 20px);
+            line-height: 0;
+        }
+    }
+    &__subtitle{
+        color: #FFF;
+        @include res('font-size', 18px);
+        @include res('line-height', 28px);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 16px);
+        }
+    }
+}

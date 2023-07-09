@@ -217,8 +217,10 @@
         display: flex;
         align-items: stretch;
         justify-content: space-between;
+        @include res('margin-bottom', 24px);
         @include media(575){
             flex-direction: column;
+            @include resa('margin-bottom', 15px);
         }
         &-left{
             @include media(575){
@@ -295,6 +297,74 @@
                 @include resa('font-size', 12px);
                 @include resa('margin-top', 12px);
             }
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('border-radius', 30px);
+        background:  url(../img/training-bg.png) center / cover no-repeat;
+        box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
+        z-index: 1;
+    }
+    &__img{
+        @include res('width', 380px);
+        @include res('min-width', 380px);
+        @include res('height', 280px);
+        @include res('margin-right', 40px);
+        @include media(575){
+            @include resa('width', 106px);
+            @include resa('min-width', 106px);
+            @include resa('height', 85px);
+            @include resa('margin-right', 8px);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1.563vw 0px 0px 1.563vw;
+        }
+    }
+    &__subtitle{
+        color: #272727;
+        @include res('font-size', 34px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('line-height', 50px);
+        text-transform: uppercase;
+        @include res('margin-bottom', 20px);
+        @include media(575){
+            @include resa('font-size', 10px);
+            @include resa('margin-bottom', 8px);
+        }
+        span{
+            color: #325CFE;
+        }
+    }
+    &__button{
+        color: #FFF;
+        @include res('font-size', 20px);
+        @include res('line-height', 53px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('padding-top', 4px);
+        @include res('padding-right', 42px);
+        @include res('padding-bottom', 4px);
+        @include res('padding-left', 42px);
+        text-decoration: none;
+        // @include res('height', 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        @include res('border-radius', 10px);
+        background: #325CFE;
+        @include media(575){
+            @include resa('font-size', 8px);
+            @include resa('border-radius', 3px);
+            padding: 0;
+            @include resa('width', 120px);
+            @include resa('height', 24px);
         }
     }
 }
