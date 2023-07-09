@@ -1489,6 +1489,20 @@
 .faq {
   padding-top: 4.1666666667vw;
   padding-bottom: 6.7708333333vw;
+  position: relative;
+  isolation: isolate;
+}
+
+.faq::before {
+  content: "";
+  position: absolute;
+  bottom: 3.0208333333vw;
+  left: 0;
+  width: 70.3125vw;
+  height: 37.03125vw;
+  background: url("../img/faq-bg.png") center/cover no-repeat;
+  z-index: -1;
+  border-radius: 0 1.5624999999vw 1.5624999999vw 0;
 }
 
 .faq__body {
@@ -1522,6 +1536,34 @@
   line-height: 2.8125vw;
   text-transform: uppercase;
   margin-bottom: 1.71875vw;
+}
+
+.faq__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #FFF;
+  font-size: 1.0416666667vw;
+  line-height: 2.7604166667vw;
+  margin-top: 2.2916666667vw;
+  padding-top: 0.2083333333vw;
+  padding-bottom: 0.2083333333vw;
+  padding-right: 3.5416666667vw;
+  padding-left: 3.5416666667vw;
+  border-radius: 0.5208333333vw;
+  font-style: normal;
+  font-weight: 700;
+  background: #325CFE;
+  text-decoration: none;
 }
 
 .faq .accordion {
@@ -1568,11 +1610,11 @@
   color: #325CFE;
   text-align: center;
   font-size: 0.7291666667vw;
+  line-height: 3.125vw;
+  margin-right: 1.5625vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.125vw;
   display: block;
-  margin-right: 1.5625vw;
 }
 
 .faq .accordion__button svg {
@@ -1580,6 +1622,7 @@
   width: 0.9375vw;
   min-width: 0.9375vw;
   height: 0.9375vw;
+  margin-left: 0.5208333333vw;
 }
 
 .faq .accordion__content {
@@ -1603,7 +1646,7 @@
 .faq .accordion__content-body p {
   font-size: 0.9375vw;
   line-height: 120%;
-  color: #5b5b5b;
+  color: #000;
 }
 
 * {
@@ -2023,7 +2066,72 @@ ul {
 
   .faq {
     padding-top: 2.7777777778vw;
-    padding-bottom: 29.1666666667vw;
+    padding-bottom: 15.5555555556vw;
+  }
+
+  .faq::before {
+    bottom: 11.1111111111vw;
+    width: 80vw;
+    border-radius: 0 2.2222222222vw 2.2222222222vw 0;
+  }
+
+  .faq__body {
+    border-radius: 2.2222222222vw;
+    padding-top: 4.1666666667vw;
+    padding-bottom: 3.3333333333vw;
+  }
+
+  .faq__title {
+    width: calc(100% - 8.3333333333vw);
+    font-size: 4.4444444444vw;
+    line-height: 5.5555555556vw;
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .faq__button {
+    font-size: 3.3333333333vw;
+    line-height: 4.4444444444vw;
+    margin-top: 3.3333333333vw;
+    padding-top: 2.2222222222vw;
+    padding-bottom: 2.2222222222vw;
+    padding-right: 8.3333333333vw;
+    padding-left: 8.3333333333vw;
+    border-radius: 0.8333333333vw;
+  }
+
+  .faq .accordion {
+    border-width: 0.2777777778vw;
+    padding-right: 1.6666666667vw;
+    padding-left: 2.2222222222vw;
+    width: calc(100% - 5.5555555556vw);
+  }
+
+  .faq .accordion__button {
+    font-size: 3.3333333333vw;
+    padding-top: 2.7777777778vw;
+    padding-bottom: 2.7777777778vw;
+    line-height: 3.3333333333vw;
+  }
+
+  .faq .accordion__button span {
+    font-size: 3.3333333333vw;
+    line-height: 4.4444444444vw;
+    margin-right: 5vw;
+  }
+
+  .faq .accordion__button svg {
+    width: 4.1666666667vw;
+    min-width: 4.1666666667vw;
+    height: 4.1666666667vw;
+    margin-left: 2.7777777778vw;
+  }
+
+  .faq .accordion__content-body {
+    padding-bottom: 1.1111111111vw;
+  }
+
+  .faq .accordion__content-body p {
+    font-size: 3.3333333333vw;
   }
 
   .container {
