@@ -373,6 +373,195 @@
   display: none;
 }
 
+.footer {
+  background: #181818;
+  padding-top: 4.1666666667vw;
+}
+
+.footer__top {
+  padding-bottom: 0.78125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2.0833333333vw;
+}
+
+.footer__logo {
+  border-radius: 0.78125vw;
+  background: #FFF;
+  padding-top: 0.625vw;
+  padding-bottom: 0.5208333333vw;
+  padding-left: 0.5208333333vw;
+  padding-right: 1.5625vw;
+  width: 14.53125vw;
+  text-decoration: none;
+}
+
+.footer__logo svg {
+  margin-bottom: 0.2083333333vw;
+}
+
+.footer__logo span {
+  display: block;
+  margin-left: 0.625vw;
+  color: #000;
+  font-size: 0.5208333333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.7291666667vw;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3125vw;
+}
+
+.footer__link {
+  color: #FFF;
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1458333333vw;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7291666667vw;
+  background: #FFFFFF;
+  border-radius: 0.78125vw;
+  overflow: hidden;
+  width: 17.1875vw;
+  height: 3.4895833333vw;
+  margin-bottom: 0.78125vw;
+}
+
+.footer__info-item svg {
+  width: 4.3229166667vw;
+  min-width: 4.3229166667vw;
+  height: 3.4895833333vw;
+}
+
+.footer__info-item-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__info-item-div span {
+  color: #242424;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0.1041666667vw;
+}
+
+.footer__info-item-div a {
+  color: #1651E9;
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.7291666667vw;
+}
+
+.footer__info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25vw;
+}
+
+.footer__info-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.40625vw;
+  text-decoration: none;
+}
+
+.footer__info-tel {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4583333333vw;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer__bot {
+  border-top: solid rgba(255, 255, 255, 0.1);
+  border-width: 0.0520833333vw;
+  padding-top: 1.25vw;
+  padding-bottom: 1.5625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bot-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1458333333vw;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .intro {
   position: relative;
   isolation: isolate;
