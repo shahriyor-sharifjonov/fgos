@@ -1,0 +1,91 @@
+.faq{
+    @include res('padding-top', 80px);
+    @include res('padding-bottom', 130px);
+    @include media(576){
+        @include resa('padding-top', 10px);
+        @include res('padding-bottom', 560px);
+    }
+    &__body{
+        @include res('border-radius', 10px);
+        @include res('padding-top', 45px);
+        @include res('padding-bottom', 45px);
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px .5208333333vw 0px rgba(0, 0, 0, 0.10);
+    }
+    &__title{
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 3.125vw);
+        color: #1E1E1E;
+        text-align: center;
+        @include res('font-size', 40px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('line-height', 54px);
+        text-transform: uppercase;
+        @include res('margin-bottom', 33px);
+    }
+    .accordion{
+        width: calc(100% - 1.0416666667vw);
+        margin-left: auto;
+        margin-right: auto;
+        border-top: solid rgba(#000, 0.1);
+        @include res('border-width', 1px);
+        @include res('padding-right', 50px);
+        @include res('padding-left', 135px);
+        &:last-of-type{
+            border-bottom: solid rgba(#000, 0.1);
+            @include res('border-width', 1px);
+        }
+        &__button{
+            color: #5B5B5B;
+            @include res('font-size', 18px);
+            @include res('padding-top', 23px);
+            @include res('padding-bottom', 23px);
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 28px);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            user-select: none;
+            span{
+                color: #325CFE;
+                text-align: center;
+                @include res('font-size', 14px);
+                font-style: normal;
+                font-weight: 700;
+                @include res('line-height', 60px);
+                display: block;
+                @include res('margin-right', 30px);
+            }
+            svg{
+                margin-left: auto;
+                @include res('width', 18px);
+                @include res('min-width', 18px);
+                @include res('height', 18px);
+            }
+        }
+        &__content{
+            overflow: hidden;
+            transition: height 300ms ease-out;
+            &:not(.active){
+                height: 0 !important;
+            }
+            &-body{
+                height: max-content;
+                @include res('padding-bottom', 23px);
+                p{
+                    @include res('font-size', 18px);
+                    line-height: 120%;
+                    color: #5b5b5b;
+                }
+            }
+        }
+    }
+}
