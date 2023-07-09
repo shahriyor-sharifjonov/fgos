@@ -19,6 +19,8 @@
         text-decoration: none;
         svg{
             @include res('margin-bottom', 4px);
+            @include res('height', 49px);
+            @include res('width', 189px);
         }
         span{
             display: block;
