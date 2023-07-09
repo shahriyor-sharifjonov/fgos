@@ -2,9 +2,27 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
+
+new Swiper(".reviews__swiper", {
+    grabCursor: true,
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    spaceBetween:30,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: ".reviews__button-prev",
+        nextEl: ".reviews__button-next",
+    },
+    breakpoints:{
+        575:{
+            slidesPerView: 4,
+            spaceBetween:20,
+        }
+    }
+});
 
 window.addEventListener('load', function() {
     var header = document.querySelector('header');
