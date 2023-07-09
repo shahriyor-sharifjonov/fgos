@@ -1604,6 +1604,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  gap: 0.5208333333vw;
 }
 
 .faq .accordion__button span {
@@ -1611,7 +1612,7 @@
   text-align: center;
   font-size: 0.7291666667vw;
   line-height: 3.125vw;
-  margin-right: 1.5625vw;
+  margin-right: 1.0416666667vw;
   font-style: normal;
   font-weight: 700;
   display: block;
@@ -1622,7 +1623,6 @@
   width: 0.9375vw;
   min-width: 0.9375vw;
   height: 0.9375vw;
-  margin-left: 0.5208333333vw;
 }
 
 .faq .accordion__content {
@@ -2111,19 +2111,19 @@ ul {
     padding-top: 2.7777777778vw;
     padding-bottom: 2.7777777778vw;
     line-height: 3.3333333333vw;
+    gap: 2.7777777778vw;
   }
 
   .faq .accordion__button span {
     font-size: 3.3333333333vw;
     line-height: 4.4444444444vw;
-    margin-right: 5vw;
+    margin-right: 2.2222222222vw;
   }
 
   .faq .accordion__button svg {
     width: 4.1666666667vw;
     min-width: 4.1666666667vw;
     height: 4.1666666667vw;
-    margin-left: 2.7777777778vw;
   }
 
   .faq .accordion__content-body {
