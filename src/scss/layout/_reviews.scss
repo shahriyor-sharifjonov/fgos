@@ -1,0 +1,250 @@
+.reviews{
+    @include res('padding-top', 65px);
+    position: relative;
+    isolation: isolate;
+    @include media(575){
+        @include resa('padding-top', 28px);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include res('width', 1460px);
+        @include res('height', 273px);
+        background: url(../img/training-before.png) center / cover no-repeat;
+        border-radius: 1.563vw 0 0 1.563vw;
+        z-index: -1;
+        @include media(575){
+            @include resa('height', 120px);
+            border-radius: 0;
+            width: 100%;
+            left: 0;
+        }
+    }
+    &__title{
+        color: #FFF;
+        text-align: center;
+        @include res('font-size', 40px);
+        @include res('line-height', 54px);
+        font-style: normal;
+        font-weight: 800;
+        text-transform: uppercase;
+        @include res('margin-bottom', 40px);
+        @include media(575){
+            @include resa('font-size', 18px);
+            @include resa('margin-bottom', 24px);
+        }
+    }
+    &__slider{
+        width: 100%;
+        overflow: hidden;
+    }
+    .swiper{
+        width: 100%;
+        position: relative;
+        @include media(575){
+            @include resa('max-width', 280px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+    }
+    &__item{
+        position: relative;
+        @include res('height', 396px);
+        @include res('max-width', 280px);
+        width: 100%;
+        isolation: isolate;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        @include res('padding-left', 30px);
+        @include res('padding-bottom', 20px);
+        transition: 300ms ease;
+        @include res('border-radius', 15px);
+        overflow: hidden;
+        @include media(575){
+            max-width: 100%;
+            @include resa('height', 396px);
+            @include resa('padding-left', 25px);
+            @include resa('padding-bottom', 20px);
+        }
+        &:hover{
+            .reviews__img{
+                transform: scale(1.1);
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(142, 142, 142, 0.00) 24.48%);
+            z-index: -1;
+            @include res('border-radius', 15px);
+            @include media(575){
+                @include resa('border-radius', 15px);
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background:  linear-gradient(180deg, rgba(142, 142, 142, 0.00) 0%, rgba(0, 0, 0, 0.68) 61.98%);
+            z-index: -1;
+            @include res('border-radius', 15px);
+            @include media(575){
+                @include resa('border-radius', 15px);
+            }
+        }
+    }
+    &__img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+        transition: 300ms ease;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include res('border-radius', 15px);
+            @include media(575){
+                @include resa('border-radius', 15px);
+            }
+        }
+    }
+    &__p{
+        position: absolute;
+        @include res('top', 10px);
+        @include res('right', 12px);
+        color: rgba(255, 255, 255, 0.50);
+        @include res('font-size', 14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('top', 10px);
+            @include resa('right', 12px);
+        }
+    }
+    &__rates{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include res('margin-bottom', 12px);
+        @include media(575){
+            @include resa('margin-bottom', 12px);
+        }
+    }
+    &__rate{
+        @include res('width', 27px);
+        @include res('min-width', 27px);
+        @include res('height', 27px);
+        @include media(575){
+            @include resa('width', 27px);
+            @include resa('min-width', 27px);
+            @include resa('height', 27px);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 4px);
+        }
+    }
+    &__name{
+        color: #FFF;
+        font-family: Gilroy;
+        @include res('font-size', 18px);
+        @include res('line-height', 24px);
+        @include res('letter-spacing', 1.8px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('margin-bottom', 12px);
+        @include media(575){
+            @include resa('font-size', 18px);
+            @include resa('line-height', 24px);
+            @include resa('margin-bottom', 12px);
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        @include res('font-size', 16px);
+        @include res('letter-spacing', 1.6px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include media(575){
+            @include resa('font-size', 16px);
+            @include resa('letter-spacing', 1.6px);
+        }
+        svg{
+            @include res('margin-right', 13px);
+            @include res('min-width', 56px);
+            @include res('width', 56px);
+            @include res('height', 56px);
+            @include media(575){
+                @include resa('margin-right', 13px);
+                @include resa('min-width', 56px);
+                @include resa('width', 56px);
+                @include resa('height', 56px);
+            }
+        }
+    }
+    &__a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        @include res('margin-top', 30px);
+        color: #325CFE;
+        @include res('font-size', 24px);
+        @include res('line-height', 22px);
+        font-style: normal;
+        font-weight: 700;
+        text-decoration-line: underline;
+        @include media(575){
+            display: none;
+        }
+    }
+    &__buttons{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: calc(100% + 13.889vw);
+        @include resa('margin-left', -25px);
+        transform: translateY(-56.944vw);
+        position: absolute;
+    }
+    &__button{
+        @include resa('width', 30px);
+        @include resa('height', 30px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        @include resa('border-radius', 8px);
+        background: #325CFE;
+    }
+}
