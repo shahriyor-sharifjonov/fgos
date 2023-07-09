@@ -8,29 +8,8 @@
     position: relative;
     &__second{
         @include res('margin-top', -172px);
-        &::before{
-            display: none;
-        }
         .teachers__image{
             @include res('right', 160px);
-        }
-    }
-    &::before{
-        content: '';
-        position: absolute;
-        background: url('../img/teachers-bg.png') center / cover no-repeat;
-        top: 0;
-        @include res('height', 220px);
-        @include res('width', 1650px);
-        left: 0;
-        z-index: -1;
-        @include res('border-start-end-radius', 30px);
-        @include res('border-end-end-radius', 30px);
-        @include media(575){
-            @include resa('height', 143px);
-            @include resa('width', 360px);
-            border-start-end-radius: 0;
-            border-end-end-radius: 0;
         }
     }
     &__title{
@@ -41,13 +20,35 @@
         @include res('line-height', 54px);
         font-style: normal;
         font-weight: 800;
+        position: relative;
+        @include res('padding-left', 100px);
         @include res('margin-bottom', 78px);
-        @include res('max-width', 1100px);
+        width: 100%;
+        @include res('padding-top', 55px);
+        @include res('padding-bottom', 55px);
         @include media(575){
             @include resa('font-size', 14px);
             @include resa('line-height', 22px);
             @include resa('margin-bottom', 50px);
         }
+        &::before{
+            content: '';
+            position: absolute;
+            background: url('../img/teachers-bg.png') center / cover no-repeat;
+            top: 0;
+            height: 100%;
+            @include res('width', 1550px);
+            right: 0;
+            z-index: -1;
+            @include res('border-start-end-radius', 30px);
+            @include res('border-end-end-radius', 30px);
+            @include media(575){
+                @include resa('height', 143px);
+                @include resa('width', 1160px);
+                border-start-end-radius: 0;
+                border-end-end-radius: 0;
+            }
+    }
         span{
             color: #325CFE;
         }
