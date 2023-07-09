@@ -419,6 +419,49 @@
   min-height: 1.1458333333vw;
 }
 
+.intro__body {
+  position: relative;
+}
+
+.intro__video {
+  border-radius: 2.6041666667vw 0.78125vw 0.78125vw 2.6041666667vw;
+  border: dashed #325CFE;
+  border-width: 0.0520833333vw;
+  width: 14.5833333333vw;
+  height: 4.375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0.78125vw;
+  padding-right: 0.9895833333vw;
+  gap: 0.4166666667vw;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.intro__video span {
+  color: #FFF;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.1458333333vw;
+  text-decoration: none;
+}
+
+.intro__video svg {
+  width: 2.96875vw;
+  min-width: 2.96875vw;
+  height: 2.96875vw;
+}
+
 .intro__title {
   padding-top: 0.9375vw;
   max-width: 31.25vw;
@@ -1311,6 +1354,33 @@ ul {
             flex-direction: column;
   }
 
+  .intro__video {
+    position: relative;
+    margin-top: 8.3333333333vw;
+    gap: 3.0555555556vw;
+    width: 51.1111111111vw;
+    height: 15.2777777778vw;
+    padding-left: 3.0555555556vw;
+    padding-right: 3.3333333333vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    border-width: 0.2777777778vw;
+    border-radius: 2.7777777778vw 8.8888888889vw 8.8888888889vw 2.7777777778vw;
+  }
+
+  .intro__video span {
+    font-size: 2.7777777778vw;
+    line-height: 3.3333333333vw;
+  }
+
+  .intro__video svg {
+    width: 10.2777777778vw;
+    min-width: 10.2777777778vw;
+    height: 10.2777777778vw;
+  }
+
   .intro__title {
     padding-top: 5vw;
     font-size: 5.5555555556vw;
@@ -1326,6 +1396,7 @@ ul {
     font-size: 3.3333333333vw;
     line-height: 4.4444444444vw;
     max-width: 61.3888888889vw;
+    margin-bottom: 0;
   }
 
   .intro__row {
