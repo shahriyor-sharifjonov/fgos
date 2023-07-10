@@ -1,11 +1,9 @@
 .benefits{
-    @include res('margin-top', 85px);
     @include res('margin-bottom', 100px);
     @include res('padding-top', 33px);
     position: relative;
     isolation: isolate;
     @include media(575){
-        @include resa('margin-top', 60px);
         @include resa('padding-top', 24px);
         @include resa('margin-bottom', 33px);
     }

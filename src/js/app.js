@@ -10,7 +10,7 @@ new Swiper(".reviews__swiper", {
     grabCursor: true,
     modules: [Navigation, Pagination],
     slidesPerView: 1,
-    spaceBetween:30,
+    spaceBetween:50,
     watchSlidesProgress: true,
     navigation:{
         prevEl: ".reviews__button-prev",

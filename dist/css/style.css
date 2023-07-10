@@ -1468,6 +1468,7 @@
 .documents {
   padding-bottom: 1.5625vw;
   padding-top: 2.2916666667vw;
+  margin-bottom: 4.4270833333vw;
   position: relative;
   isolation: isolate;
 }
@@ -1544,7 +1545,6 @@
 }
 
 .benefits {
-  margin-top: 4.4270833333vw;
   margin-bottom: 5.2083333333vw;
   padding-top: 1.71875vw;
   position: relative;
@@ -1766,7 +1766,7 @@
 }
 
 .samples__content {
-  border-radius: 1.5625vw;
+  border-radius: 1.563vw;
   background: #FFF;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1781,6 +1781,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .samples__row {
@@ -1912,6 +1913,12 @@
   background: url(../img/training-before.png) center/cover no-repeat;
   border-radius: 1.563vw 0 0 1.563vw;
   z-index: -1;
+}
+
+.reviews.reverse::before {
+  right: auto;
+  left: 0;
+  border-radius: 0 1.563vw 1.563vw 0;
 }
 
 .reviews__title {
@@ -2133,6 +2140,7 @@
       -ms-transform: translateY(-56.944vw);
           transform: translateY(-56.944vw);
   position: absolute;
+  pointer-events: none;
 }
 
 .reviews__button {
@@ -2150,6 +2158,7 @@
   border-radius: 8px;
   border-radius: 2.2222222222vw;
   background: #325CFE;
+  pointer-events: all;
 }
 
 .faq {
@@ -2345,6 +2354,10 @@ body.home {
   background-position: top center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.swiper-button-disabled {
+  opacity: 0.7 !important;
 }
 
 .wrapper {
@@ -2754,6 +2767,15 @@ ul {
     line-height: 6.1111111111vw;
   }
 
+  .samples__wrapper {
+    border-radius: 1.563vw;
+    overflow: hidden;
+  }
+
+  .reviews.reverse::before {
+    border-radius: 0;
+  }
+
   .faq {
     padding-top: 2.7777777778vw;
     padding-bottom: 15.5555555556vw;
@@ -3147,6 +3169,7 @@ ul {
   .documents {
     padding-top: 4.1666666667vw;
     padding-top: 5.5555555556vw;
+    margin-bottom: 16.6666666667vw;
   }
 
   .documents::before {
@@ -3191,7 +3214,6 @@ ul {
   }
 
   .benefits {
-    margin-top: 16.6666666667vw;
     padding-top: 6.6666666667vw;
     margin-bottom: 9.1666666667vw;
   }

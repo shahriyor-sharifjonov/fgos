@@ -25,6 +25,9 @@ body{
         background-repeat: no-repeat;        
     }
 }
+.swiper-button-disabled{
+    opacity: .7 !important;
+}
 .wrapper{
     width: 100%;
     min-height: 100%;

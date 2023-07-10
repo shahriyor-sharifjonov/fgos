@@ -22,6 +22,16 @@
             left: 0;
         }
     }
+    &.reverse{
+        &::before{
+            right: auto;
+            left: 0;
+            border-radius: 0 1.563vw 1.563vw 0;
+            @include media(576){
+                border-radius: 0;
+            }
+        }
+    }
     &__title{
         color: #FFF;
         text-align: center;
@@ -236,6 +246,7 @@
         @include resa('margin-left', -25px);
         transform: translateY(-56.944vw);
         position: absolute;
+        pointer-events: none;
     }
     &__button{
         @include resa('width', 30px);
@@ -246,5 +257,6 @@
         border-radius: 8px;
         @include resa('border-radius', 8px);
         background: #325CFE;
+        pointer-events: all;
     }
 }

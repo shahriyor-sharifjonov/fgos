@@ -1,11 +1,13 @@
 .documents{
     @include res('padding-bottom', 30px);
     @include res('padding-top', 44px);
+    @include res('margin-bottom', 85px);
     position: relative;
     isolation: isolate;
     @include media(575){
         @include resa('padding-top', 15px);
         @include resa('padding-top', 20px);
+        @include resa('margin-bottom', 60px);
     }
     &::before{
         content: '';
