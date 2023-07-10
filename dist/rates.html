@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230710185914">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230710193120">
     <title>Document</title>
   </head>
-  <body class="home"> 
+  <body class="rates"> 
     <div class="wrapper"> 
             <header class="header"> 
               <div class="header__nav container"> <a class="header__logo" href="index.html">
@@ -244,6 +244,28 @@
                     </div>
                   </div>
                 </div>
+                <div class="calc" id="calc"> 
+                  <div class="calc__body container"> 
+                    <div class="calc__top"> 
+                      <div class="calc__img"> <img src="img/calc-img.png" alt="" draggable="false"></div>
+                      <div class="calc__content"> 
+                        <p class="calc__subtitle">Рассчитайте скидку:</p>
+                        <div class="calc__row"> 
+                          <p class="calc__label">Количество человек в вашей учебной группе: </p>
+                          <input class="calc__input" type="text" value="5">
+                        </div>
+                        <div class="calc__row"> 
+                          <p class="calc__label">Ваша дополнительная скидка составит:</p>
+                          <input class="calc__input" type="text" value="10%" disabled>
+                        </div><a class="calc__btn" href="#!">Скачать форму заявки </a>
+                      </div>
+                    </div>
+                    <div class="calc__bot"> 
+                      <p class="calc__title">Дополнительные <span>скидки</span> при коллективном обучении</p>
+                      <p class="calc__p">Вы можете подать коллективную заявку на обучение. Чем больше человек в заявке, тем больше скидка. Рассчитайте скидку, просто введя количество человек в группе.</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="reviews reverse">
                   <div class="reviews__body container">   
                     <h2 class="reviews__title">Отзывы о работе учебного центра</h2>
@@ -475,6 +497,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20230710185914"> </script>
+    <script src="js/app.min.js?_v=20230710193120"> </script>
   </body>
 </html>

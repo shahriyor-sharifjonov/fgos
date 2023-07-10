@@ -24,6 +24,12 @@ body{
         background-size: 100% auto;
         background-repeat: no-repeat;        
     }
+    &.rates{
+        background: url('../img/rates-bg.png'), #F4F6F8;
+        background-position: top center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;    
+    }
 }
 .swiper-button-disabled{
     opacity: .7 !important;

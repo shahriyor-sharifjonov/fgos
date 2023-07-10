@@ -1,0 +1,208 @@
+.calc{
+    @include res('padding-bottom', 45px);
+    @include media(576){
+        @include resa('padding-bottom', 40px);
+    }
+    &__body{
+        @include media(576){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        @include res('padding-bottom', 35px);
+        @include media(576){
+            padding-bottom: 0;
+            @include resa('padding-top', 20px);
+        }
+    }
+    &__img{
+        position: absolute;
+        bottom: 0;
+        @include res('left', 118px);
+        @include res('width', 435px);
+        @include res('height', 498px);
+        @include media(576){
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__content{
+        @include res('border-radius', 30px);
+        @include res('padding-top', 32px);
+        @include res('padding-right', 130px);
+        @include res('padding-bottom', 34px);
+        @include res('padding-left', 77px);
+        @include res('min-width', 563px);
+        @include res('width', 563px);
+        background: #FFF;
+        box-shadow: 0px 0px .5208333333vw 0px rgba(2, 2, 2, 0.10);
+        @include media(576){
+            @include resa('border-radius', 10px);
+            @include resa('padding', 15px);
+            // @include resa('padding-right', 15px);
+            // @include resa('padding-bottom', 20px);
+            // @include resa('padding-left', 15px);
+            box-shadow: 0px 0px 1.5555555556vw 0px rgba(2, 2, 2, 0.10);
+            min-width: 0;
+            width: 100%;
+        }
+    }
+    &__subtitle{
+        color: #1D1D1D;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('line-height', 48px);
+        @include res('margin-bottom', 14px);
+        @include res('width', 360px);
+        @include media(576){
+            @include resa('font-size', 24px);
+            line-height: 120%;
+            @include resa('margin-bottom', 15px);
+            width: 100%;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        @include res('width', 360px);
+        @include media(576){
+            width: 100%;
+            @include resa('gap', 10px);
+        }
+        &+.calc__row{
+            @include res('margin-top', 15px);
+            @include media(576){
+                @include resa('margin-top', 8px);
+            }
+        }
+    }
+    &__label{
+        color: #1D1D1D;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-hieght', 22px);
+        @include res('max-width', 211px);
+        @include media(576){
+            @include resa('font-size', 14px);
+            line-height: 120%;
+            @include resa('max-width', 160px);
+        }
+    }
+    &__input{
+        @include res('width', 80px);
+        @include res('height', 44px);
+        @include res('border-radius', 8px);
+        border: solid rgba(50, 92, 254, 0.50);
+        @include res('border-width', 1px);
+        background: #FFF;
+        box-shadow: 0px 0px .5208333333vw 0px rgba(2, 2, 2, 0.10);
+        @include res('padding-left', 18px);
+        color: #325CFE;
+        font-weight: 700;
+        @include res('font-size', 26px);
+        @include res('line-height', 24px);
+        @include media(576){
+            @include resa('border-width', 1px);
+            @include resa('font-size', 18px);
+            @include resa('width', 70px);
+            @include resa('height', 35px);
+            @include resa('border-radius', 8px);
+            @include resa('padding-left', 15px);
+            line-height: 120%;
+        }
+    }
+    &__btn{
+        @include res('margin-top', 27px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        @include res('height', 60px);
+        border-radius: 10px;
+        background: #325CFE;
+        color: #FFF;
+        text-align: center;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 26px);
+        @include res('padding-left', 20px);
+        @include res('padding-right', 20px);
+        @include media(576){
+            @include resa('margin-top', 15px);
+            @include resa('height', 60px);
+            @include resa('font-size', 18px);
+            @include resa('padding-left', 20px);
+            @include resa('padding-right', 20px);
+        }
+    }
+    &__bot{
+        position: relative;
+        isolation: isolate;
+        @include res('padding-left', 33px);
+        @include res('padding-top', 46px);
+        @include res('padding-right', 38px);
+        @include res('padding-bottom', 54px);
+        @include media(576){
+            @include resa('padding-bottom', 25px);
+            @include resa('padding-top', 25px);
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            @include res('right', -369px);
+            @include res('width', 1550px);
+            height: 100%;
+            background: url('../img/calc-bg.png') center / cover no-repeat;
+            z-index: -1;
+            border-radius: 1.5624999999vw 0 0 1.5624999999vw;
+            @include media(576){
+                border-radius: 0;
+                @include resa('width', 360px);
+                right: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__title{
+        color: #FFF;
+        @include res('font-size', 34px);
+        font-style: normal;
+        font-weight: 800;
+        @include res('line-height', 54px);
+        @include res('margin-bottom', 7px);
+        text-transform: uppercase;
+        @include media(576){
+            @include resa('font-size', 20px);
+            line-height: 120%;
+            @include resa('margin-bottom', 10px);
+        }
+        span{
+            color: #325CFE;
+        }
+    }
+    &__p{
+        color: #FFF;
+        @include res('font-size', 27px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 34px);
+        @include media(576){
+            @include resa('font-size', 16px);
+            line-height: 120%;
+        }
+    }
+}

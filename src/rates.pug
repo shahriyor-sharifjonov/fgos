@@ -6,7 +6,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
         title Document
-    body.home 
+    body.rates 
         .wrapper 
             include components/header 
             +header 
@@ -21,6 +21,8 @@ html(lang="en")
                 +training 
                 include components/samples 
                 +samples 
+                include components/calc 
+                +calc 
                 include components/reviews 
                 +reviews-reverse 
                 include components/faq 
