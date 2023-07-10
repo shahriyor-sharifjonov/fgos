@@ -817,6 +817,30 @@
   height: 1.3020833333vw;
 }
 
+.intro__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.8854166667vw;
+  gap: 0.78125vw;
+}
+
+.intro__price-del {
+  color: #A6A6A6;
+  font-size: 2.0833333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.intro__price-p {
+  color: #FFF;
+  font-size: 2.0833333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .advantages {
   padding-bottom: 1.0416666667vw;
   position: relative;
@@ -2623,6 +2647,11 @@ ul {
             order: -3;
   }
 
+  .intro__breadcrumbs-item {
+    font-size: 2.7777777778vw;
+    line-height: 6.1111111111vw;
+  }
+
   .intro__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2678,6 +2707,10 @@ ul {
     margin-bottom: 0;
   }
 
+  .intro__p.small {
+    max-width: 61.3888888889vw;
+  }
+
   .intro__row {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -2704,6 +2737,21 @@ ul {
   .intro__btn-p {
     font-size: 2.5vw;
     line-height: 2.7777777778vw;
+  }
+
+  .intro__price {
+    margin-top: 4.7222222222vw;
+    gap: 2.7777777778vw;
+  }
+
+  .intro__price-del {
+    font-size: 4.4444444444vw;
+    line-height: 6.1111111111vw;
+  }
+
+  .intro__price-p {
+    font-size: 4.4444444444vw;
+    line-height: 6.1111111111vw;
   }
 
   .faq {

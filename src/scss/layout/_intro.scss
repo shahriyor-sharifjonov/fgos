@@ -66,6 +66,10 @@
             font-weight: 300;
             @include res('line-height', 22px);
             text-decoration: none;
+            @include media(576){
+                @include resa('font-size', 10px);
+                @include resa('line-height', 22px);
+            }
             &.active{
                 font-weight: 500;
             }
@@ -165,6 +169,9 @@
         }
         &.small{
             @include res('max-width', 450px);
+            @include media(576){
+                @include resa('max-width', 221px);
+            }
         }
     }
     &__row{
@@ -251,6 +258,37 @@
         svg{
             @include res('width', 25px);
             @include res('height', 25px);
+        }
+    }
+    &__price{
+        display: flex;
+        @include res('margin-top', 17px);
+        @include res('gap', 15px);
+        @include media(576){
+            @include resa('margin-top', 17px);
+            @include resa('gap', 10px);
+        }
+        &-del{
+            color: #A6A6A6;
+            @include res('font-size', 40px);
+            @include res('line-height', 54px);
+            font-style: normal;
+            font-weight: 500;
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 22px);
+            }
+        }
+        &-p{
+            color: #FFF;
+            @include res('font-size', 40px);
+            @include res('line-height', 54px);
+            font-style: normal;
+            font-weight: 700;
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 22px);
+            }
         }
     }
 }
