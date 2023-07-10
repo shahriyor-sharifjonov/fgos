@@ -7,6 +7,9 @@
         @include resa('padding-top', 55px);
         @include resa('padding-bottom', 30px);
     }
+    &_rates{
+        @include res('padding-bottom', 166px);
+    }
     &__bg{
         z-index: -1;
         position: absolute;
@@ -55,6 +58,17 @@
         @include media(576){
             @include resa('min-height', 15px);
             order: -3;
+        }
+        &-item{
+            color: #FFF;
+            @include res('font-size', 10px);
+            font-style: normal;
+            font-weight: 300;
+            @include res('line-height', 22px);
+            text-decoration: none;
+            &.active{
+                font-weight: 500;
+            }
         }
     }
     &__body{
@@ -149,6 +163,9 @@
             @include resa('max-width', 221px);
             margin-bottom: 0;
         }
+        &.small{
+            @include res('max-width', 450px);
+        }
     }
     &__row{
         display: flex;
@@ -177,6 +194,7 @@
         @include res('padding-right', 20px);
         @include res('border-radius', 10px);
         @include res('height', 60px);
+        @include res('min-width', 220px);
         display: flex;
         align-items: center;
         justify-content: center;

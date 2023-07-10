@@ -594,6 +594,10 @@
   padding-bottom: 6.1458333333vw;
 }
 
+.intro_rates {
+  padding-bottom: 8.6458333333vw;
+}
+
 .intro__bg {
   z-index: -1;
   position: absolute;
@@ -631,6 +635,19 @@
 
 .intro__breadcrumbs {
   min-height: 1.1458333333vw;
+}
+
+.intro__breadcrumbs-item {
+  color: #FFF;
+  font-size: 0.5208333333vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.1458333333vw;
+  text-decoration: none;
+}
+
+.intro__breadcrumbs-item.active {
+  font-weight: 500;
 }
 
 .intro__body {
@@ -699,6 +716,10 @@
   margin-bottom: 1.9791666667vw;
 }
 
+.intro__p.small {
+  max-width: 23.4375vw;
+}
+
 .intro__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,6 +748,7 @@
   padding-right: 1.0416666667vw;
   border-radius: 0.5208333333vw;
   height: 3.125vw;
+  min-width: 11.4583333333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
