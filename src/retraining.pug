@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body.rates 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                include components/intro 
+                +retraining-intro 
+                include components/teachers 
+                +teachers2 
+                include components/search 
+                +search 
+                include components/documents 
+                +documents 
+                include components/training 
+                +training 
+                include components/samples 
+                +samples 
+                include components/calc 
+                +calc 
+                include components/reviews 
+                +reviews-reverse 
+                include components/faq 
+                +faq 
+            include components/footer 
+            +footer 
+        script(src="js/app.min.js") 
