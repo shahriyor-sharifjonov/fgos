@@ -66,7 +66,7 @@ mixin rates-intro()
                 p.intro__price-p 990р
 
 
-mixin retraining-intro()
+mixin retrainingIntro()
     section.intro.intro_rates#intro
         .intro__bg 
             img(src="@img/retraining-intro-bg.png", alt="" draggable="false")
@@ -98,3 +98,42 @@ mixin retraining-intro()
             .intro__price 
                 p.intro__price-del от <del>5000р</del>
                 p.intro__price-p 2990р
+
+
+mixin olympiads-intro()
+    section.intro.intro_olympiads#intro
+        .intro__bg 
+            img(src="@img/olympiads-intro-bg.png", alt="" draggable="false")
+        .intro__body.container
+            .intro__left
+                .intro__breadcrumbs
+                    <a href="#" class="intro__breadcrumbs-item">Для учителя ></a> 
+                    <a href="#" class="intro__breadcrumbs-item active">Курсы профессиональной переподготовки</a>
+                h1.intro__title КУРСЫ ПРОФЕССИОНАЛЬНОЙ ПЕРЕПОДГОТОВКИ
+                p.intro__p.small Получи официальные документы установленного образца о переподготовке в соотвествии с ФГОС 
+                .intro__row 
+                    .intro__col
+                        a(href="#!").intro__btn Выбрать олипмиаду
+                        p.intro__btn-p Прошли более 300 000 участников
+                    .intro__col
+                        a(href="#!").intro__cabinet 
+                            img(src="@img/diploma.svg", alt="" draggable="false")
+                            | Получить диплом
+                        p.intro__btn-p Вы можете сами настроить внешний вид
+                .intro__wrappers 
+                    .intro__wrapper 
+                        p.intro__subtitle Кому подойдет:
+                        ul.intro__content 
+                            li.intro__li для учителей
+                            li.intro__li для дошкольников
+                            li.intro__li для студентов
+                            li.intro__li для школьников
+                    .intro__wrapper 
+                        p.intro__subtitle Направления:
+                        ul.intro__content 
+                            li.intro__li на разные темы
+                            li.intro__li для всех классов
+                            li.intro__li по предметам
+                            li.intro__li по ФГОС
+            .intro__img 
+                img(src="@img/intro-img.png", alt="" draggable="false")

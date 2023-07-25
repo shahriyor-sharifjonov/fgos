@@ -12,6 +12,16 @@
             @include res('right', 160px);
         }
     }
+    &__olympiads{
+        .teachers__image{
+            @include res('width', 435px);
+            @include res('height', 603px);
+            @include media(575){
+                @include resa('height', 120px);
+                @include resa('width', 86.73px);
+            }
+        }
+    }
     &__title{
         color: #FFF;
         font-family: Gilroy;

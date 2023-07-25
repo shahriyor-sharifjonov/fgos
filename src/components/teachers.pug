@@ -60,3 +60,34 @@ mixin ratesTeachers()
                         p.teachers__desc Обучение проводится с использованием дистанционных технологий. В выдаваемых документах форма обучения не указываются.  
                         p.teachers__desc Обучайтесь в любое удобное время и получите документы не отличающиеся от документов при очном обучении.
             h2.teachers__title НАМ ДОВЕРЯЮТ БОЛЕЕ  #[span 300 000] КВАЛИФИЦИРОВАННЫХ  ПЕДАГОГОВ И ВОСПИТАТЕЛЕЙ, ВЕДЬ У НАС:
+
+
+mixin olympiadsTeachers()
+    .teachers.teachers__olympiads 
+        .teachers__body.container 
+            .teachers__wrapper 
+                .teachers__row 
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-1.png", alt="" draggable="false")
+                            p.teachers__subtitle ОфициальнЫЕ ДОКУМЕНТЫ
+                        p.teachers__desc Наш учебный центр входит в реестр аккредитованных организаций, предоставляющих услуги в сфере образования. Пройти олимпиаду и получить диплом можно онлайн. 
+                        p.teachers__desc Дипломы признаются аттестационными комиссиями во всех регионах РФ. 
+                    .teachers__image 
+                        img(src="@img/olympiads-teacher.png", alt="" draggable="false")
+                .teachers__row 
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-2.png", alt="" draggable="false")
+                            p.teachers__subtitle УДОБНО, ПРОСТО, 24/7
+                        p.teachers__desc Отвечая на вопросы, Вы сразу увидите результат: ответили правильно или неправильно. Вы можете сами выбрать внешний вид своего диплома. 
+                        p.teachers__desc Вам не нужно регистрироваться на платформе. Войдите в личный кабинет по e-mail и начинайте.
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-3.png", alt="" draggable="false")
+                            p.teachers__subtitle Большой выбор олимпиад
+                        p.teachers__desc Среднее время прохождения олимпиады всего лишь 5 минут. В нашем образовательном центре прошли олимпиады более 300 000 человек.
+                        p.teachers__desc Мы предлагаем вам выбор свыше 100 олимпиад на самые различные темы и направления.
