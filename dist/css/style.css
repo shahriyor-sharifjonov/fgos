@@ -1979,7 +1979,7 @@
   overflow: hidden;
 }
 
-.reviews__item:hover .reviews__img {
+.reviews__item:hover .reviews__img img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -2022,9 +2022,6 @@
   bottom: 0;
   right: 0;
   z-index: -2;
-  -webkit-transition: 300ms ease;
-  -o-transition: 300ms ease;
-  transition: 300ms ease;
 }
 
 .reviews__img img {
@@ -2033,6 +2030,9 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.78125vw;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .reviews__p {
@@ -3232,6 +3232,11 @@ ul {
   }
 
   .reviews__slide {
+    border-radius: 4.1666666667vw;
+  }
+
+  .reviews__img {
+    overflow: hidden;
     border-radius: 4.1666666667vw;
   }
 

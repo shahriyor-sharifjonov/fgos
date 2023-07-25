@@ -91,7 +91,7 @@
             @include resa('padding-bottom', 20px);
         }
         &:hover{
-            .reviews__img{
+            .reviews__img img{
                 transform: scale(1.1);
             }
         }
@@ -133,12 +133,16 @@
         bottom: 0;
         right: 0;
         z-index: -2;
-        transition: 300ms ease;
+        @include media(576){
+            overflow: hidden;
+            @include resa('border-radius', 15px);
+        }
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
             @include res('border-radius', 15px);
+            transition: 300ms ease;
             @include media(575){
                 @include resa('border-radius', 15px);
             }
