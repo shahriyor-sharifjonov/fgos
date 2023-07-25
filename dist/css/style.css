@@ -4115,7 +4115,8 @@ ul {
   }
 
   .reviews__title {
-    font-size: 5vw;
+    font-size: 4.8611111111vw;
+    line-height: 6.6666666667vw;
     margin-bottom: 6.6666666667vw;
   }
 

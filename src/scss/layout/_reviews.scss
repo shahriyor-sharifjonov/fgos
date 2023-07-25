@@ -42,7 +42,8 @@
         text-transform: uppercase;
         @include res('margin-bottom', 40px);
         @include media(575){
-            @include resa('font-size', 18px);
+            @include resa('font-size', 17.5px);
+            @include resa('line-height', 24px);
             @include resa('margin-bottom', 24px);
         }
     }
