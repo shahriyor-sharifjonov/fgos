@@ -1415,6 +1415,7 @@
   -webkit-box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
           box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.1);
   z-index: 1;
+  overflow: hidden;
 }
 
 .training__img {
@@ -3226,6 +3227,14 @@ ul {
   .intro__price-p {
     font-size: 4.4444444444vw;
     line-height: 6.1111111111vw;
+  }
+
+  .training__cards-right {
+    margin-left: 0;
+  }
+
+  .training__content {
+    border-radius: 5vw;
   }
 
   .samples__wrapper {

@@ -242,6 +242,9 @@
             display: flex;
             align-items: stretch;
             @include res('margin-left', 20px);
+            @include media(576){
+                margin-left: 0;
+            }
             .training__desc{
                 @include media(575){
                     @include resa('font-size', 10px);
@@ -310,6 +313,10 @@
         background:  url(../img/training-bg.png) center / cover no-repeat;
         box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.10);
         z-index: 1;
+        overflow: hidden;
+        @include media(576){
+            @include resa('border-radius', 18px);
+        }
     }
     &__img{
         @include res('width', 380px);
