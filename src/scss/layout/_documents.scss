@@ -48,6 +48,7 @@
         @include res('margin-bottom', 23px);
         @include media(575){
             @include resa('font-size', 20px);
+            @include resa('line-height', 28px);
             @include resa('margin-bottom', 20px);
         }
     }
