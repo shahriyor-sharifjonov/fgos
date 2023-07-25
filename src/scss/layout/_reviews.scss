@@ -94,6 +94,9 @@
         &:hover{
             .reviews__img img{
                 transform: scale(1.1);
+                @include media(576){
+                    transform: scale(1);
+                }
             }
         }
         &::before{

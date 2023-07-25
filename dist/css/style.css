@@ -3251,6 +3251,12 @@ ul {
     border-radius: 4.1666666667vw;
   }
 
+  .reviews__item:hover .reviews__img img {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
   .reviews__img {
     overflow: hidden;
     border-radius: 4.1666666667vw;
