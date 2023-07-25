@@ -1161,20 +1161,6 @@
   position: relative;
 }
 
-.training::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 25vw;
-  width: 54.6875vw;
-  background: url(../img/training-before.png) left/cover no-repeat;
-  z-index: -1;
-  border-start-start-radius: 1.5625vw;
-  border-end-start-radius: 1.5625vw;
-}
-
 .training__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1276,6 +1262,26 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.0416666667vw;
+}
+
+.training__info {
+  position: relative;
+  padding-bottom: 2.5vw;
+}
+
+.training__info::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 54.6875vw;
+  right: -19.2708333333vw;
+  background: url(../img/training-before.png) left/cover no-repeat;
+  z-index: -1;
+  border-start-start-radius: 1.5625vw;
+  border-end-start-radius: 1.5625vw;
 }
 
 .training__title {
@@ -3703,14 +3709,6 @@ ul {
     padding-bottom: 6.3888888889vw;
   }
 
-  .training::before {
-    height: 93.0555555556vw;
-    width: 95.8333333333vw;
-    left: 4.1666666667vw;
-    border-radius: 5vw 0 0 5vw;
-    right: 0;
-  }
-
   .training__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3779,7 +3777,16 @@ ul {
   .training__info {
     padding-top: 6.9444444444vw;
     padding-left: 5vw;
-    margin-bottom: 10vw;
+    margin-bottom: 4.4444444444vw;
+    padding-bottom: 5.5555555556vw;
+  }
+
+  .training__info::before {
+    height: 100%;
+    width: 95.8333333333vw;
+    left: 0vw;
+    border-radius: 5vw 0 0 5vw;
+    right: 0;
   }
 
   .training__title {
