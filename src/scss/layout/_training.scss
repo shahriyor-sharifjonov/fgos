@@ -20,8 +20,7 @@
             @include resa('height', 335px);
             @include resa('width', 345px);
             @include resa('left', 15px);
-            @include resa('border-start-start-radius', 18px);
-            @include resa('border-end-start-radius', 18px);
+            border-radius: 5vw 0 0 5vw;
             right: 0;
         }
     }

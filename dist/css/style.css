@@ -3697,8 +3697,7 @@ ul {
     height: 93.0555555556vw;
     width: 95.8333333333vw;
     left: 4.1666666667vw;
-    border-start-start-radius: 5vw;
-    border-end-start-radius: 5vw;
+    border-radius: 5vw 0 0 5vw;
     right: 0;
   }
 
