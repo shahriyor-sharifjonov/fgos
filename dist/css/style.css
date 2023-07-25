@@ -3231,6 +3231,10 @@ ul {
     border-radius: 0;
   }
 
+  .reviews__slide {
+    border-radius: 4.1666666667vw;
+  }
+
   .faq {
     padding-top: 2.7777777778vw;
     padding-bottom: 15.5555555556vw;
@@ -4099,6 +4103,7 @@ ul {
 
   .reviews__item {
     max-width: 100%;
+    border-radius: 4.1666666667vw;
     height: 110vw;
     padding-left: 6.9444444444vw;
     padding-bottom: 5.5555555556vw;

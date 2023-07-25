@@ -63,6 +63,11 @@
             width: max-content;
         }
     }
+    &__slide{
+        @include media(576){
+            @include resa('border-radius', 15px);
+        }
+    }
     &__item{
         position: relative;
         @include res('height', 396px);
@@ -80,6 +85,7 @@
         overflow: hidden;
         @include media(575){
             max-width: 100%;
+            @include resa('border-radius', 15px);
             @include resa('height', 396px);
             @include resa('padding-left', 25px);
             @include resa('padding-bottom', 20px);
