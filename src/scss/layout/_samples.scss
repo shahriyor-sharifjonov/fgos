@@ -29,7 +29,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
         @include media(575){
+            @include resa('border-radius', 12px);
             box-shadow: none;
             background: none;
             padding-bottom: 0;
@@ -58,6 +60,10 @@
     }
     &__wrapper{
         width: 100%;
+        @include media(576){
+            border-radius: 3.3333333333vw;
+            overflow: hidden;
+        }
     }
     &__left{
         min-width: 50%;

@@ -1,0 +1,49 @@
+mixin item()
+    .search__item   
+        p.search__item-price Цена от <del>1700р</del> <span>990р</span>
+        p.search__item-title НАЗВАНИЕ КУРСА:
+        p.search__item-p Актуальные проблемы обучения детей с нарушением слуха в образовательных организациях общего и среднего профессионального образования
+        .search__item-row 
+            .search__item-left 
+                .search__item-time 
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.8033 3.10466C16.7322 6.0336 16.7322 10.7823 13.8033 13.7113C10.8744 16.6402 6.12562 16.6402 3.1967 13.7113C0.267766 10.7823 0.267766 6.03358 3.1967 3.10466C6.12564 0.175725 10.8744 0.175725 13.8033 3.10466" stroke="#325CFE" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.6476 12.7179L8.27246 9.98603V4.0979" stroke="#325CFE" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    span 36-248 часов
+                a(href="#!").search__item-link Смотреть учебный план
+            a(href="#!").search__item-btn Выбрать объем курса  
+
+
+mixin search()
+    .search 
+        .search__body.container 
+            .search__top
+                h2.search__title У НАС ВЫ НАЙДЕТЕ БОЛЕЕ  <span>1 300</span> КУРСОВ ПРОФЕССИОНАЛЬНОЙ ПЕРЕПОДГОТОВКИ ПО РАЗЛИЧНЫМ НАПРАВЛЕНИЯМ:
+            p.search__info Скидка <span>55%</span> действует только <span>до 26 марта</span>! Курсы повышения квалификации всего <span>от 2990 рублей</span>.
+            .search__form 
+                p.search__form-p Найдите необходимые вам курсы и получите престижные документы:
+                .search__form-row 
+                    input(type="text" placeholder="Введите название курса, например: “ФГОС”, “ОВЗ”").search__input
+                    button(type='button').search__btn 
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="32" height="32" fill="url(#pattern7)"/>
+                        <defs>
+                        <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_146_938" transform="scale(0.015625)"/>
+                        </pattern>
+                        <image id="image0_146_938" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+            .search__p Соответствуют <span>ФГОС</span> третьего поколения, вступающим в силу с <span>1 сентября 2022 года</span>
+            .search__content 
+                +item
+                +item
+                +item
+                +item
+                +item
+                +item
+                +item
+                +item
+                +item
+            a(href="#!").search__link Посмотреть все курсы (447) повышения квалификации → 

@@ -1,11 +1,13 @@
 .documents{
     @include res('padding-bottom', 30px);
     @include res('padding-top', 44px);
+    @include res('margin-bottom', 85px);
     position: relative;
     isolation: isolate;
     @include media(575){
         @include resa('padding-top', 15px);
         @include resa('padding-top', 20px);
+        @include resa('margin-bottom', 60px);
     }
     &::before{
         content: '';
@@ -36,6 +38,11 @@
             width: 100%;
         }
     }
+    &__body{
+        @include media(576){
+            @include resa('padding-bottom', 20px);
+        }
+    }
     &__title{
         color: #FFF;
         text-align: center;
@@ -45,7 +52,8 @@
         font-weight: 800;
         @include res('margin-bottom', 23px);
         @include media(575){
-            @include resa('font-size', 20px);
+            @include resa('font-size', 19px);
+            @include resa('line-height', 28px);
             @include resa('margin-bottom', 20px);
         }
     }
@@ -78,7 +86,7 @@
         @include res('margin-bottom', 10px);
         @include media(575){
             max-width: 100%;
-            @include resa('margin-bottom', 3px);
+            @include resa('margin-bottom', 12px);
         }
         img{
             width: 100%;

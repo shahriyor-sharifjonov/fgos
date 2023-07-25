@@ -6,25 +6,30 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
         title Document
-    body.home 
-        .wrapper 
+    body.rates 
+        .wrapper  
             include components/header 
             +header 
             main.main 
                 include components/intro 
-                +intro
+                +rates-intro
                 include components/teachers
                 +ratesTeachers 
                 include components/training 
                 +training 
+                +teachers2 
+                include components/search
+                +search
                 include components/documents 
                 +documents 
-                include components/benefits 
-                +benefits
+                include components/training 
+                +training 
                 include components/samples 
                 +samples 
+                include components/calc 
+                +calc 
                 include components/reviews 
-                +reviews 
+                +reviews-reverse 
                 include components/faq 
                 +faq 
             include components/footer 

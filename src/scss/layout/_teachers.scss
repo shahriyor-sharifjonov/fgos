@@ -101,6 +101,7 @@
         @include media(575){
             @include resa('top', -120px);
             @include resa('height', 120px);
+            @include resa('width', 86.73px);
         }
         img{
             height: 100%;

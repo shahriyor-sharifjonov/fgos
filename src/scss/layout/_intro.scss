@@ -7,6 +7,9 @@
         @include resa('padding-top', 55px);
         @include resa('padding-bottom', 30px);
     }
+    &_rates{
+        @include res('padding-bottom', 166px);
+    }
     &__bg{
         z-index: -1;
         position: absolute;
@@ -55,6 +58,21 @@
         @include media(576){
             @include resa('min-height', 15px);
             order: -3;
+        }
+        &-item{
+            color: #FFF;
+            @include res('font-size', 10px);
+            font-style: normal;
+            font-weight: 300;
+            @include res('line-height', 22px);
+            text-decoration: none;
+            @include media(576){
+                @include resa('font-size', 10px);
+                @include resa('line-height', 22px);
+            }
+            &.active{
+                font-weight: 500;
+            }
         }
     }
     &__body{
@@ -149,6 +167,12 @@
             @include resa('max-width', 221px);
             margin-bottom: 0;
         }
+        &.small{
+            @include res('max-width', 450px);
+            @include media(576){
+                @include resa('max-width', 221px);
+            }
+        }
     }
     &__row{
         display: flex;
@@ -177,6 +201,7 @@
         @include res('padding-right', 20px);
         @include res('border-radius', 10px);
         @include res('height', 60px);
+        @include res('min-width', 220px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -233,6 +258,37 @@
         svg{
             @include res('width', 25px);
             @include res('height', 25px);
+        }
+    }
+    &__price{
+        display: flex;
+        @include res('margin-top', 17px);
+        @include res('gap', 15px);
+        @include media(576){
+            @include resa('margin-top', 17px);
+            @include resa('gap', 10px);
+        }
+        &-del{
+            color: #A6A6A6;
+            @include res('font-size', 40px);
+            @include res('line-height', 54px);
+            font-style: normal;
+            font-weight: 500;
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 22px);
+            }
+        }
+        &-p{
+            color: #FFF;
+            @include res('font-size', 40px);
+            @include res('line-height', 54px);
+            font-style: normal;
+            font-weight: 700;
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 22px);
+            }
         }
     }
 }

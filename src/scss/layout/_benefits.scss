@@ -1,11 +1,9 @@
 .benefits{
-    @include res('margin-top', 85px);
     @include res('margin-bottom', 100px);
     @include res('padding-top', 33px);
     position: relative;
     isolation: isolate;
     @include media(575){
-        @include resa('margin-top', 60px);
         @include resa('padding-top', 24px);
         @include resa('margin-bottom', 33px);
     }
@@ -117,6 +115,7 @@
         justify-content: space-between;
         position: relative;
         isolation: isolate;
+        overflow: hidden;
         &:first-of-type{
             @include media(575){
                 @include resa('margin-bottom', 10px);
@@ -128,6 +127,7 @@
             @include resa('padding-right', 15px);
             @include resa('padding-bottom', 20px);
             @include resa('padding-left', 25px);
+            @include resa('border-radius', 18px);
         }
         &.lg{
             @include res('min-width', 780px);
