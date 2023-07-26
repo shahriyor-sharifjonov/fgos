@@ -1846,6 +1846,10 @@
   padding-bottom: 3.125vw;
 }
 
+.samples__olympiads {
+  padding-bottom: 2.34375vw;
+}
+
 .samples__olympiads .samples__title {
   text-align: left;
   position: relative;
@@ -4916,6 +4920,10 @@ ul {
     padding-bottom: 19.4444444444vw;
   }
 
+  .samples__olympiads {
+    padding-bottom: 5.5555555556vw;
+  }
+
   .samples__olympiads .samples__title {
     padding-top: 5.5555555556vw;
     padding-bottom: 11.1111111111vw;
@@ -5082,6 +5090,7 @@ ul {
 
   .calc__olympiads .calc__top {
     margin-bottom: 5.5555555556vw;
+    padding-top: 0;
   }
 
   .calc__olympiads .calc__bot {

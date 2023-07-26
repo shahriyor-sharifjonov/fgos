@@ -4,6 +4,10 @@
         @include resa('padding-bottom', 70px);
     }
     &__olympiads{
+        @include res('padding-bottom', 45px);
+        @include media(575){
+            @include resa('padding-bottom', 20px);
+        }
         .samples{
             &__title{
                 text-align: left;
