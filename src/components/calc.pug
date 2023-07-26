@@ -16,3 +16,43 @@ mixin calc()
             .calc__bot 
                 p.calc__title Дополнительные <span>скидки</span> при коллективном обучении
                 p.calc__p Вы можете подать коллективную заявку на обучение. Чем больше человек в заявке, тем больше скидка. Рассчитайте скидку, просто введя количество человек в группе.
+
+mixin olympiads-calc()
+    .calc.calc__olympiads#calc 
+        .calc__body.container 
+            .calc__top 
+                .olympiads__left
+                    .olympiads__wrapper 
+                        p.olympiads__subtitle Оплачиваете #[span 2] диплома
+                        .olympiads__imgs
+                            .olympiads__img 
+                                img(src="@img/calc-diploma-1.png", alt="" draggable="false")
+                            .olympiads__img 
+                                img(src="@img/calc-diploma-1.png", alt="" draggable="false")
+                    .olympiads__wrapper 
+                        p.olympiads__subtitle #[span 3-й] в подарок!
+                        .olympiads__img.bg 
+                            img(src="@img/calc-diploma-3.png", alt="" draggable="false")
+                .olympiads__girl 
+                    img(src="@img/teachers-girl-2.png", alt="" draggable="false")
+            .calc__bot 
+                .olympiads__info
+                    p.calc__title УСПЕЙТЕ ПРИНЯТЬ УЧАСТИЕ В #[span очень выгодной] АКЦИИ:
+                    p.calc__p Каждый #[span третий] диплом в вашем заказе вы получаете #[span в подарок]!
+                .olympiads__right       
+                    .olympiads__content 
+                        p.olympiads__p До конца акции осталось: 
+                        .olympiads__items 
+                            .olympiads__item 
+                                p.olympiads__date 2
+                                p.olympiads__txt Дней 
+                            .olympiads__item 
+                                p.olympiads__date 12
+                                p.olympiads__txt Часов 
+                            .olympiads__item 
+                                p.olympiads__date 40
+                                p.olympiads__txt Минут 
+                            .olympiads__item 
+                                p.olympiads__date 08
+                                p.olympiads__txt Секунд 
+                    button(type="button").olympiads__btn Получить диплом

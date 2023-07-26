@@ -2597,7 +2597,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: -19.21875vw;
+  right: -19.2708333333vw;
   width: 80.7291666667vw;
   height: 100%;
   background: url("../img/calc-bg.png") center/cover no-repeat;
@@ -2625,6 +2625,269 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.7708333333vw;
+}
+
+.calc__p span {
+  color: #325CFE;
+  font-weight: 700;
+}
+
+.calc__olympiads .calc__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  position: relative;
+}
+
+.calc__olympiads .calc__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calc__olympiads .calc__title {
+  max-width: 29.6875vw;
+  width: 100%;
+}
+
+.calc__olympiads .calc__p {
+  max-width: 27.0833333333vw;
+  width: 100%;
+}
+
+.calc__olympiads .calc__bot {
+  padding-left: 5.7291666667vw;
+}
+
+.calc__olympiads .olympiads__girl {
+  position: absolute;
+  width: 21.875vw;
+  height: 31.25vw;
+  bottom: 0;
+  right: 0;
+}
+
+.calc__olympiads .olympiads__girl img {
+  width: 100%;
+  height: 100%;
+}
+
+.calc__olympiads .olympiads__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calc__olympiads .olympiads__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc__olympiads .olympiads__wrapper:not(:last-of-type) {
+  margin-right: 1.5625vw;
+}
+
+.calc__olympiads .olympiads__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 1.3020833333vw;
+     -moz-column-gap: 1.3020833333vw;
+          column-gap: 1.3020833333vw;
+}
+
+.calc__olympiads .olympiads__img {
+  width: 10.3645833333vw;
+  overflow: hidden;
+  border-radius: 1.0416666667vw;
+}
+
+.calc__olympiads .olympiads__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.calc__olympiads .olympiads__img.bg {
+  width: 13.0208333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calc__olympiads .olympiads__img.bg img {
+  height: 100%;
+  line-height: 0;
+}
+
+.calc__olympiads .olympiads__subtitle {
+  color: #1D1D1D;
+  font-size: 1.3541666667vw;
+  line-height: 1.7708333333vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0.2604166667vw;
+}
+
+.calc__olympiads .olympiads__subtitle span {
+  font-weight: 700;
+  color: #325CFE;
+}
+
+.calc__olympiads .olympiads__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.calc__olympiads .olympiads__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5208333333vw;
+  background: #FFF;
+  padding-top: 0.2083333333vw;
+  padding-right: 2.1354166667vw;
+  padding-bottom: 0.2083333333vw;
+  padding-left: 2.1354166667vw;
+  margin-bottom: 0.78125vw;
+}
+
+.calc__olympiads .olympiads__p {
+  color: #325CFE;
+  font-size: 1.0416666667vw;
+  line-height: 1.7708333333vw;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0.1041666667vw;
+}
+
+.calc__olympiads .olympiads__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.calc__olympiads .olympiads__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc__olympiads .olympiads__item:not(:last-of-type) {
+  margin-right: 0.4166666667vw;
+}
+
+.calc__olympiads .olympiads__date {
+  padding-top: 0.4166666667vw;
+  padding-right: 1.25vw;
+  padding-bottom: 0.4166666667vw;
+  padding-left: 1.25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #262626;
+  font-size: 1.875vw;
+  line-height: 1.7708333333vw;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 0.5208333333vw;
+  border: solid #325CFE;
+  border-width: 0.0520833333vw;
+  background: #FFF;
+  min-width: 3.5416666667vw;
+  width: 3.5416666667vw;
+}
+
+.calc__olympiads .olympiads__txt {
+  color: #000;
+  font-size: 0.625vw;
+  line-height: 1.0416666667vw;
+  font-weight: 500;
+}
+
+.calc__olympiads .olympiads__btn {
+  border-radius: 0.5208333333vw;
+  background: #325CFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.0416666667vw;
+  line-height: 2.7604166667vw;
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 0.4166666667vw;
+  padding-bottom: 0.4166666667vw;
 }
 
 .search {
@@ -4808,6 +5071,114 @@ ul {
 
   .reviews__a {
     display: none;
+  }
+
+  .calc__olympiads .calc__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .calc__olympiads .calc__top {
+    margin-bottom: 5.5555555556vw;
+  }
+
+  .calc__olympiads .calc__bot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .calc__olympiads .calc__title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .calc__olympiads .calc__p {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 5.5555555556vw;
+  }
+
+  .calc__olympiads .calc__bot {
+    padding-left: 0;
+  }
+
+  .calc__olympiads .olympiads__girl {
+    display: none;
+  }
+
+  .calc__olympiads .olympiads__wrapper:not(:last-of-type) {
+    margin-right: 2.7777777778vw;
+  }
+
+  .calc__olympiads .olympiads__imgs {
+    -webkit-column-gap: 2.7777777778vw;
+       -moz-column-gap: 2.7777777778vw;
+            column-gap: 2.7777777778vw;
+  }
+
+  .calc__olympiads .olympiads__img {
+    width: 22.2222222222vw;
+    border-radius: 2.7777777778vw;
+  }
+
+  .calc__olympiads .olympiads__img.bg {
+    width: 36.1111111111vw;
+  }
+
+  .calc__olympiads .olympiads__subtitle {
+    font-size: 3.8888888889vw;
+    line-height: 5vw;
+    margin-bottom: 0.5555555556vw;
+  }
+
+  .calc__olympiads .olympiads__content {
+    border-radius: 2.7777777778vw;
+    padding-top: 1.1111111111vw;
+    padding-right: 11.3888888889vw;
+    padding-bottom: 1.1111111111vw;
+    padding-left: 11.3888888889vw;
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .calc__olympiads .olympiads__p {
+    font-size: 3.8888888889vw;
+    line-height: 5vw;
+    margin-bottom: 1.3888888889vw;
+  }
+
+  .calc__olympiads .olympiads__item:not(:last-of-type) {
+    margin-right: 1.3888888889vw;
+  }
+
+  .calc__olympiads .olympiads__date {
+    padding-top: 1.1111111111vw;
+    padding-right: 2.7777777778vw;
+    padding-bottom: 1.1111111111vw;
+    padding-left: 2.7777777778vw;
+    font-size: 4.4444444444vw;
+    line-height: 5vw;
+    border-radius: 2.7777777778vw;
+    border-width: 0.2777777778vw;
+    min-width: 11.1111111111vw;
+    width: 11.1111111111vw;
+    margin-bottom: 1.1111111111vw;
+  }
+
+  .calc__olympiads .olympiads__txt {
+    font-size: 2.7777777778vw;
+    line-height: 3.3333333333vw;
+  }
+
+  .calc__olympiads .olympiads__btn {
+    border-radius: 2.7777777778vw;
+    font-size: 3.3333333333vw;
+    line-height: 3.8888888889vw;
+    padding-top: 2.2222222222vw;
+    padding-bottom: 2.2222222222vw;
   }
 
   .category {
