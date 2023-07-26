@@ -1,5 +1,8 @@
 .people{
     @include res('padding-bottom', 35px);
+    @include media(575){
+        @include resa('padding-bottom', 30px);
+    }
     &__title{
         position: relative;
         @include res('padding-top', 58px);
@@ -12,17 +15,123 @@
         font-weight: 800;
         @include res('max-width', 700px);
         width: 100%;
+        @include res('margin-right', 87px);
+        @include media(575){
+            max-width: 100%;
+            margin-right: 0;
+            @include resa('font-size', 16px);
+            @include resa('line-height', 20px);
+            font-weight: 700;
+            @include resa('padding-top', 20px);
+            @include resa('padding-bottom', 40px);
+        }
         &::before{
             content: '';
             position: absolute;
             top: 0;
+            @include res('right', 87px);
             @include res('left', -370px);
             height: 100%;
-            @include res('width', 1400px);
+            @include res('width', 1470px);
             background: url('../img/teachers-bg.png') center / cover no-repeat;
             z-index: -1;
             @include res('border-top-right-radius', 30px);
             @include res('border-bottom-right-radius', 30px);
+            @include media(575){
+                @include resa('right', -15px);
+                @include resa('left', -15px);
+                width: calc(100% +  8.333vw);
+                border-radius: 0;
+            }
+        }
+    }
+    &__wrapper{
+        @include res('margin-top', -67px);
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include res('column-gap', 20px);
+        @include res('row-gap', 25px);
+        @include media(575){
+            flex-direction: column;
+            align-items: stretch;
+            column-gap: 0;
+            @include resa('row-gap', 15px);
+            @include resa('margin-top', -25px);
+        }
+    }
+    &__item{
+        width: calc(33.333% - 0.694vw);
+        background: #ffff;
+        filter: drop-shadow(0px 0px 0.521vw rgba(2, 2, 2, 0.10));
+        @include res('border-radius', 30px);
+        @include res('padding-top', 23px);
+        @include res('padding-right', 10px);
+        @include res('padding-bottom', 44px);
+        @include res('padding-left', 25px);
+        @include media(575){
+            width: 100%;
+            filter: drop-shadow(0px 0px 2.778vw rgba(2, 2, 2, 0.10));
+            @include resa('border-radius', 10px);
+            @include resa('padding-top', 15px);
+            @include resa('padding-right', 20px);
+            @include resa('padding-bottom', 20px);
+            @include resa('padding-left', 20px);
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 8px);
+        @include media(575){
+            @include resa('margin-bottom', 8px);
+        }
+    }
+    &__img{
+        @include res('border-radius', 15px);
+        overflow: hidden;
+        @include res('min-width', 65px);
+        @include res('width', 65px);
+        @include res('height', 65px);
+        @include res('margin-right', 14px);
+        @include media(575){
+            @include resa('border-radius', 10px);
+            @include resa('width', 45px);
+            @include resa('min-width', 45px);
+            @include resa('height', 45px);
+            @include resa('margin-right', 10px);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__subtitle{
+        color: #000;
+        @include res('font-size', 20px);
+        @include res('line-height', 28px);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include res('max-width', 242px);
+        width: 100%;
+        @include media(575){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 22px);
+            max-width: 100%;
+        }
+    }
+    &__desc{
+        color: #000;
+        @include res('font-size', 18px);
+        @include res('line-height', 26px);
+        font-style: normal;
+        font-weight: 300;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height',18px);
         }
     }
 }
