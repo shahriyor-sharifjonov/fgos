@@ -1245,6 +1245,10 @@
   position: relative;
 }
 
+.training__olympiads {
+  padding-bottom: 2.0833333333vw;
+}
+
 .training__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3111,6 +3115,147 @@
   font-weight: 300;
 }
 
+.tutorial {
+  padding-bottom: 3.125vw;
+  position: relative;
+}
+
+.tutorial::before {
+  content: "";
+  position: absolute;
+  bottom: -13.0208333333vw;
+  width: 61.4583333333vw;
+  height: 29.7395833333vw;
+  background: url("../img/tutorial-bg.png") center/cover no-repeat;
+  z-index: -1;
+  border-top-right-radius: 1.5625vw;
+  border-bottom-right-radius: 1.5625vw;
+}
+
+.tutorial__body {
+  border-radius: 1.5625vw;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 0.521vw 0px rgba(2, 2, 2, 0.1);
+          box-shadow: 0px 0px 0.521vw 0px rgba(2, 2, 2, 0.1);
+  padding-top: 3.125vw;
+  padding-bottom: 1.7708333333vw;
+}
+
+.tutorial__title {
+  color: #020202;
+  text-align: center;
+  font-size: 1.7708333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.7708333333vw;
+}
+
+.tutorial__img {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin-bottom: 1.1458333333vw;
+}
+
+.tutorial__img img {
+  width: 100%;
+}
+
+.tutorial__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 9.6354166667vw;
+  height: 9.6354166667vw;
+}
+
+.tutorial__play img {
+  width: 100%;
+}
+
+.tutorial__link {
+  color: #325CFE;
+  font-size: 1.25vw;
+  line-height: 2.8125vw;
+  letter-spacing: 0.0125vw;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  display: block;
+  text-align: center;
+}
+
+.diplomas {
+  padding-bottom: 2.0833333333vw;
+  position: relative;
+}
+
+.diplomas__title {
+  color: #FFF;
+  font-size: 2.0833333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 45.8333333333vw;
+  width: 100%;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  padding-top: 2.7083333333vw;
+  padding-bottom: 5.2083333333vw;
+}
+
+.diplomas__title::before {
+  content: "";
+  position: absolute;
+  background: url(../img/teachers-bg.png) center/cover no-repeat;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: -34.8958333333vw;
+  z-index: -1;
+}
+
+.diplomas__row {
+  margin-top: -2.2395833333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diplomas__girl {
+  width: 18.3854166667vw;
+  height: 28.75vw;
+  margin-top: -4.375vw;
+  position: absolute;
+}
+
+.diplomas__girl img {
+  width: 100%;
+  height: 100%;
+}
+
+.diplomas__img {
+  min-width: 45.8333333333vw;
+  width: 45.8333333333vw;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.diplomas__img img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4120,6 +4265,10 @@ ul {
     padding-bottom: 6.3888888889vw;
   }
 
+  .training__olympiads {
+    padding-bottom: 5.5555555556vw;
+  }
+
   .training__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -4740,5 +4889,79 @@ ul {
   .people__desc {
     font-size: 3.8888888889vw;
     line-height: 5vw;
+  }
+
+  .tutorial {
+    padding-bottom: 8.3333333333vw;
+  }
+
+  .tutorial::before {
+    display: none;
+  }
+
+  .tutorial__body {
+    border-radius: 4.1666666667vw;
+    -webkit-box-shadow: 0px 0px 2.778vw 0px rgba(2, 2, 2, 0.1);
+            box-shadow: 0px 0px 2.778vw 0px rgba(2, 2, 2, 0.1);
+    padding-top: 5.5555555556vw;
+    padding-bottom: 5.5555555556vw;
+  }
+
+  .tutorial__title {
+    font-size: 3.8888888889vw;
+    line-height: 5vw;
+    font-weight: 700;
+    max-width: 66.6666666667vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tutorial__img {
+    margin-bottom: 3.6111111111vw;
+  }
+
+  .tutorial__play {
+    width: 16.6666666667vw;
+    height: 16.6666666667vw;
+  }
+
+  .tutorial__link {
+    font-size: 3.8888888889vw;
+    line-height: 4.4444444444vw;
+    letter-spacing: 0.0666666667vw;
+  }
+
+  .diplomas {
+    padding-bottom: 36.1111111111vw;
+  }
+
+  .diplomas__title {
+    max-width: 100%;
+    font-size: 4.4444444444vw;
+    line-height: 6.6666666667vw;
+    padding-top: 6.1111111111vw;
+    padding-bottom: 11.1111111111vw;
+  }
+
+  .diplomas__title::before {
+    width: 100vw;
+    left: -4.1666666667vw;
+  }
+
+  .diplomas__row {
+    margin-top: -5.5555555556vw;
+  }
+
+  .diplomas__girl {
+    width: 30.5555555556vw;
+    height: 47.2222222222vw;
+    margin-top: 0;
+    bottom: 0;
+  }
+
+  .diplomas__img {
+    min-width: 100%;
+    width: 100%;
   }
 }
