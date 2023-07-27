@@ -920,6 +920,18 @@
   width: 100%;
 }
 
+.intro_internal .intro__col {
+  margin-bottom: 0;
+}
+
+.intro_internal .intro__img {
+  width: 26.0416666667vw;
+}
+
+.intro_internal .intro__img img {
+  width: 100%;
+}
+
 .advantages {
   padding-bottom: 1.0416666667vw;
   position: relative;
@@ -4030,6 +4042,12 @@ ul {
     border-radius: 0;
   }
 
+  .intro_internal .intro__bg {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+
   .training__cards-right {
     margin-left: 0;
   }
@@ -4435,6 +4453,11 @@ ul {
   }
 
   .intro_olympiads .intro__img {
+    width: 100%;
+    margin-top: 8.3333333333vw;
+  }
+
+  .intro_internal .intro__img {
     width: 100%;
     margin-top: 8.3333333333vw;
   }

@@ -137,3 +137,26 @@ mixin olympiads-intro()
                             li.intro__li по ФГОС
             .intro__img 
                 img(src="@img/intro-img.png", alt="" draggable="false")
+                
+mixin internal-intro()
+    section.intro.intro_internal#intro
+        .intro__bg 
+            img(src="@img/olympiads-intro-bg.png", alt="" draggable="false")
+        .intro__body.container
+            .intro__left
+                .intro__breadcrumbs
+                    <a href="#" class="intro__breadcrumbs-item">Для учителя ></a> 
+                    <a href="#" class="intro__breadcrumbs-item active">Курсы профессиональной переподготовки</a>
+                h1.intro__title КУРСЫ ПРОФЕССИОНАЛЬНОЙ ПЕРЕПОДГОТОВКИ
+                p.intro__p.small Получи официальные документы установленного образца о переподготовке в соотвествии с ФГОС 
+                .intro__row 
+                    .intro__col
+                        a(href="#!").intro__btn Выбрать олипмиаду
+                        p.intro__btn-p Прошли более 300 000 участников
+                    .intro__col
+                        a(href="#!").intro__cabinet 
+                            img(src="@img/diploma.svg", alt="" draggable="false")
+                            | Получить диплом
+                        p.intro__btn-p Вы можете сами настроить внешний вид
+            .intro__img 
+                img(src="@img/intro-img.png", alt="" draggable="false")
