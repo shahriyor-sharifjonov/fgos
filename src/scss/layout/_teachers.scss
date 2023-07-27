@@ -1,11 +1,11 @@
 .teachers{
     @include res('padding-top', 55px);
     @include res('padding-bottom', 24px);
+    position: relative;
     @include media(575){
         @include resa('padding-top', 26px);
         @include resa('padding-bottom', 22px);
     }
-    position: relative;
     &__second{
         @include res('margin-top', -172px);
         .teachers__image{
@@ -19,6 +19,156 @@
             @include media(575){
                 @include resa('height', 120px);
                 @include resa('width', 86.73px);
+            }
+        }
+    }
+    &__ultimate{
+        @include res('margin-top', -172px);
+        .teachers{
+            &__image{
+                @include res('width', 435px);
+                @include res('height', 603px);
+                @include media(575){
+                    @include resa('height', 120px);
+                    @include resa('width', 86.73px);
+                }
+            }
+            &__img{
+                overflow: hidden;
+                @include res('border-radius', 20px);
+                @include media(575){
+                    @include resa('top', -120px);
+                    @include resa('height', 120px);
+                    @include resa('width', 45px);
+                    @include resa('min-width', 45px);
+                    @include resa('border-radius', 10px);
+                }
+            }
+            &__title{
+                padding: 0;
+                color: #1A1A1A;
+                @include res('margin-bottom', 8px);
+                @include res('font-size', 40px);
+                font-weight: 800;
+                @include res('max-width', 740px);
+                width: 100%;
+                @include media(575){
+                    @include resa('font-size', 18px);
+                    max-width: 100%;
+                    @include resa('margin-bottom', 8px);
+                }
+                &::before{
+                    display: none;
+                }
+            }
+            &__row{
+                &:nth-of-type(2){
+                    width: 100%;
+                    .teachers__item{
+                        width: 100%;
+                        max-width: 100%;
+                        @include media(575){
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+            &__form{
+                display: flex;
+                align-items: stretch;
+                @include res('margin-top', 21px);
+                @include media(575){
+                    @include resa('margin-top', 10px);
+                    flex-direction: column;
+                }
+            }
+            &__input{
+                color: rgba(16, 16, 16, 0.43);
+                @include res('font-size', 20px);
+                font-style: normal;
+                font-weight: 300;
+                @include res('margin-right', 32px);
+                @include res('height', 60px);
+                @include res('width', 430px);
+                @include res('padding-left', 18px);
+                @include res('padding-right', 18px);
+                @include res('padding-top', 10px);
+                @include res('padding-bottom', 10px);
+                @include res('border-radius', 12px);
+                border: solid #325CFE;
+                @include res('border-width', 1px);
+                background: #FFF;
+                @include media(575){
+                    width: 100%;
+                    height: max-content;
+                    @include resa('font-size', 12px);
+                    margin-right: 0;
+                    @include resa('border-width', 1px);
+                    @include resa('border-radius', 8px);
+                    @include resa('padding-left', 12px);
+                    @include resa('padding-right', 12px);
+                    @include resa('padding-top', 10px);
+                    @include resa('padding-bottom', 10px);
+                    @include resa('margin-bottom', 10px);
+                }
+                &::placeholder{
+                    color: rgba(16, 16, 16, 0.43);
+                    @include res('font-size', 20px);
+                    font-style: normal;
+                    @include media(575){
+                        @include resa('font-size', 14px);
+                    }
+                }
+            }
+            &__btn{
+                color: #FFF;
+                text-align: center;
+                @include res('font-size', 20px);
+                font-style: normal;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include res('padding-top', 10px);
+                @include res('padding-bottom', 10px);
+                @include res('padding-left', 35px);
+                @include res('padding-right', 35px);
+                @include res('border-radius', 10px);
+                background: #325CFE;
+                transition: 300ms ease;
+                @include media(575){
+                    @include resa('font-size', 14px);
+                    @include resa('padding-top', 10px);
+                    @include resa('padding-bottom', 10px);
+                    @include resa('padding-left', 35px);
+                    @include resa('padding-right', 35px);
+                    @include resa('border-radius', 10px);
+                }
+                &:hover{
+                    background: lighten($color: #325CFE, $amount: 5);
+                }
+            }
+            &__p{
+                text-align: center;
+                color: #000;
+                @include res('font-size', 24px);
+                @include res('line-height', 54px);
+                @include res('letter-spacing', 0.24px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('margin-top', 16px);
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    line-height: 120%;
+                    @include resa('letter-spacing', 0.24px);
+                    @include resa('margin-top', 6px);
+                }
+                span{
+                    color: #325CFE;
+                    &.bold{
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

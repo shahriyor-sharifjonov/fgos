@@ -151,6 +151,9 @@
             @include resa('margin-bottom', 12px);
             order: -2;
         }
+        span{
+            color: #325CFE;
+        }
     }
     &__p{
         color: #B8B8B8;
@@ -367,6 +370,15 @@
     }
     &_olympiads{
         .intro{
+            &__flex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                @include media(575){
+                    flex-direction: column;
+                }
+            }
             &__bg{
                 @include media(576){
                     display: block;
@@ -374,10 +386,70 @@
                     border-radius: 0;
                 }
             }
-            &__body{
+            &__img{
+                @include res('width', 500px);
+                @include media(575){
+                    width: 100%;
+                    @include resa('margin-top', 30px);
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            &__right{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+            &__info{
+                color: #FAFAFA;
+                @include res('font-size', 18px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('line-height', 43px);
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 24px);
+                }
+            }
+        }
+    }
+    &_internal{
+        .intro{
+            &__flex{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                width: 100%;
+                @include media(575){
+                    flex-direction: column;
+                }
+            }
+            &__right{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+            &__info{
+                color: #FAFAFA;
+                @include res('font-size', 18px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('line-height', 43px);
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 24px);
+                }
+            }
+            &__bg{
+                @include media(576){
+                    display: block;
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+            &__col{
+                margin-bottom: 0;
             }
             &__img{
                 @include res('width', 500px);
@@ -391,8 +463,20 @@
             }
         }
     }
-    &_internal{
+    &_ultimate{
         .intro{
+            &__title{
+                @include res('margin-bottom', 38px);
+            }
+            &__flex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                @include media(575){
+                    flex-direction: column;
+                }
+            }
             &__bg{
                 @include media(576){
                     display: block;
@@ -400,8 +484,21 @@
                     border-radius: 0;
                 }
             }
-            &__col{
-                margin-bottom: 0;
+            &__right{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+            &__info{
+                color: #FAFAFA;
+                @include res('font-size', 18px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('line-height', 43px);
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 24px);
+                }
             }
             &__img{
                 @include res('width', 500px);
