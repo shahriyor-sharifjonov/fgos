@@ -1,7 +1,7 @@
 .calc{
     @include res('padding-bottom', 45px);
     @include media(576){
-        @include resa('padding-bottom', 40px);
+        @include resa('padding-bottom', 25px);
     }
     &__body{
         @include media(576){

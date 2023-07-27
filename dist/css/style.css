@@ -3460,6 +3460,14 @@
   border-bottom-right-radius: 1.5625vw;
 }
 
+.tutorial_internal {
+  padding-bottom: 5.7291666667vw;
+}
+
+.tutorial_internal::before {
+  bottom: 2.7604166667vw;
+}
+
 .tutorial__body {
   border-radius: 1.5625vw;
   background: #FFF;
@@ -3583,6 +3591,46 @@
 }
 
 .diplomas__img img {
+  width: 100%;
+}
+
+.templates {
+  padding-bottom: 3.2291666667vw;
+}
+
+.templates__body {
+  background: #fff;
+  -webkit-filter: drop-shadow(0px 0px 0.521vw rgba(2, 2, 2, 0.1));
+          filter: drop-shadow(0px 0px 0.521vw rgba(2, 2, 2, 0.1));
+  border-radius: 1.5625vw;
+  padding-top: 2.3958333333vw;
+  padding-bottom: 2.96875vw;
+}
+
+.templates__title {
+  color: #020202;
+  text-align: center;
+  font-size: 2.0833333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 42.7083333333vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.1979166667vw;
+}
+
+.templates__title span {
+  color: #325CFE;
+}
+
+.templates__img {
+  width: 100%;
+}
+
+.templates__img img {
   width: 100%;
 }
 
@@ -4155,7 +4203,7 @@ ul {
   }
 
   .calc {
-    padding-bottom: 11.1111111111vw;
+    padding-bottom: 6.9444444444vw;
   }
 
   .calc__body {
@@ -5378,6 +5426,10 @@ ul {
     display: none;
   }
 
+  .tutorial_internal {
+    padding-bottom: 8.3333333333vw;
+  }
+
   .tutorial__body {
     border-radius: 4.1666666667vw;
     -webkit-box-shadow: 0px 0px 2.778vw 0px rgba(2, 2, 2, 0.1);
@@ -5442,5 +5494,23 @@ ul {
   .diplomas__img {
     min-width: 100%;
     width: 100%;
+  }
+
+  .templates {
+    padding-bottom: 6.9444444444vw;
+  }
+
+  .templates__body {
+    border-radius: 4.1666666667vw;
+    padding-top: 5.5555555556vw;
+    padding-bottom: 5.5555555556vw;
+  }
+
+  .templates__title {
+    font-size: 5vw;
+    line-height: 6.6666666667vw;
+    max-width: 100%;
+    padding-left: 5.5555555556vw;
+    padding-right: 5.5555555556vw;
   }
 }

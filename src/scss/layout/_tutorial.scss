@@ -18,6 +18,15 @@
             display: none;
         }
     }
+    &_internal{
+        @include res('padding-bottom', 110px);
+        @include media(575){
+            @include resa('padding-bottom', 30px);
+        }
+        &::before{
+            @include res('bottom', 53px);
+        }
+    }
     &__body{
         @include res('border-radius', 30px);
         background: #FFF;
