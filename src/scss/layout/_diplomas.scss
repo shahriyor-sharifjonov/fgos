@@ -25,6 +25,9 @@
             @include resa('padding-top', 22px);
             @include resa('padding-bottom', 40px);
         }
+        span{
+            color: #325CFE;
+        }
         &::before{
             content: '';
             position: absolute;

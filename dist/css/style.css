@@ -4234,6 +4234,10 @@
   padding-bottom: 5.2083333333vw;
 }
 
+.diplomas__title span {
+  color: #325CFE;
+}
+
 .diplomas__title::before {
   content: "";
   position: absolute;
