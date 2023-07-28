@@ -4018,6 +4018,11 @@
   padding-bottom: 1.8229166667vw;
 }
 
+.people__compets .people__title {
+  text-transform: uppercase;
+  max-width: 39.0625vw;
+}
+
 .people__title {
   position: relative;
   padding-top: 3.0208333333vw;
@@ -4031,6 +4036,10 @@
   max-width: 36.4583333333vw;
   width: 100%;
   margin-right: 4.53125vw;
+}
+
+.people__title span {
+  color: #325CFE;
 }
 
 .people__title::before {
@@ -6448,6 +6457,10 @@ ul {
 
   .people {
     padding-bottom: 8.3333333333vw;
+  }
+
+  .people__compets .people__title {
+    max-width: 100%;
   }
 
   .people__title {
