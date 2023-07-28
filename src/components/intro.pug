@@ -191,3 +191,29 @@ mixin ultimate-intro()
                     .intro__img 
                         img(src="@img/intro-img.png", alt="" draggable="false")
                     p.intro__info Участие бесплатное!
+                
+mixin compets-intro()
+    section.intro.intro_compets#intro
+        .intro__bg 
+            img(src="@img/olympiads-intro-bg.png", alt="" draggable="false")
+        .intro__body.container
+            .intro__breadcrumbs
+                <a href="#" class="intro__breadcrumbs-item">Для учителя ></a> 
+                <a href="#" class="intro__breadcrumbs-item active">Творческий конкурс</a>
+            .intro__flex
+                .intro__left
+                    h1.intro__title Бесплатные ФГОС конкурсы для педагогов и учащихся
+                    p.intro__p.small Оставьте заявку прямо сейчас и получите свой диплом в течение 2-х часов. 
+                    .intro__row 
+                        .intro__col
+                            a(href="#!").intro__btn Принять участие
+                            p.intro__btn-p Займет всего 3 минуты
+                        .intro__col
+                            a(href="#!").intro__cabinet 
+                                img(src="@img/diploma.svg", alt="" draggable="false")
+                                | Оформить диплом
+                            p.intro__btn-p Вы можете сами настроить внешний вид
+                .intro__right 
+                    .intro__img 
+                        img(src="@img/intro-img.png", alt="" draggable="false")
+                    p.intro__info Участие бесплатное!

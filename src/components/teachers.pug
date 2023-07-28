@@ -124,3 +124,62 @@ mixin ultimate-teachers()
                             input(type="email" placeholder="Введите ваш e-mail" required).teachers__input
                             button(type="submit").teachers__btn Начать тестирование 
                 p.teachers__p #[span.bold АКЦИЯ:] Каждый #[span третий] диплом в подарок! Действует только до #[span 28 марта]! 
+
+mixin compets-teachers()   
+    .teachers.teachers__compets 
+        .teachers__body.container 
+            .teachers__wrapper 
+                .teachers__row 
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-1.png", alt="" draggable="false")
+                            p.teachers__subtitle ОфициальнЫЕ ДОКУМЕНТЫ
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-2.png", alt="" draggable="false")
+                            p.teachers__subtitle УДОБНО, ПРОСТО, быстро
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-4.svg", alt="" draggable="false")
+                            p.teachers__subtitle Диплом через 2 часа
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-3.png", alt="" draggable="false")
+                            p.teachers__subtitle Бесплатное участие
+                    .teachers__image 
+                        img(src="@img/olympiads-teacher.png", alt="" draggable="false")
+                .teachers__row 
+                    .teachers__item
+                        h2.teachers__title Заполните форму участника творческого конкурса и #[span прикрепите] свою работу:
+                        .teachers__compets-row
+                            .teachers__left 
+                                .teachers__flex 
+                                    form(action="").teachers__form
+                                        p.teachers__flex-p Вы получите диплом участника творческого конкурса через 2 часа.
+                                        input(type="text" placeholder="Введите ваше имя и фамилию" required).teachers__input
+                                        input(type="email" placeholder="Введите ваш e-mail" required).teachers__input
+                                        input(type="text" placeholder="Введите название вашей работы" required).teachers__input
+                                        .teachers__form-row
+                                            button(type="button").teachers__button Выбрать номинацию
+                                            p.teachers__form-p Вы выбрали: Животный мир
+                                        .teachers__content 
+                                            p.teachers__txt Категория конкурса:
+                                            select.teachers__select 
+                                                option(value="0").teachers__option Международный
+                                                option(value="1").teachers__option Международный
+                                                option(value="2").teachers__option Международный
+                                                option(value="3").teachers__option Международный
+                                        .teachers__texts 
+                                            a(href="#!").teachers__link
+                                                img(src="@img/clip.svg", alt="" draggable="false")
+                                                | Прикрепить конкурсную работу
+                                            p.teachers__info Сейчас файл не выбран
+                                        button(type="submit").teachers__btn Отправить заявку 
+                            .teachers__right    
+                                .teachers__subtitles
+                                    p.teachers__right-p Вы получите такой диплом 
+                                    a(href="#!").teachers__right-link Создать диплом
+                                .teachers__diploma
+                                    img(src="@img/compets-img.png", alt="" draggable="false") 
+                p.teachers__p #[span.bold АКЦИЯ:] Каждый #[span третий] диплом в подарок! Действует только до #[span 28 марта]! 

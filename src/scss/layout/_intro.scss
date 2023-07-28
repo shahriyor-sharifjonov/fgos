@@ -512,4 +512,73 @@
             }
         }
     }
+    &_compets{
+        .intro{
+            &__title{
+                @include res('margin-bottom', 38px);
+                @include media(575){
+                    @include resa('margin-bottom', 10px);
+                }
+            }
+            &__col{
+                @include media(575){
+                    margin-bottom: 0;
+                }
+            }
+            &__p{
+                @include media(575){
+                    @include resa('margin-bottom', 10px);
+                }
+            }
+            &__btn{
+                &-p{
+                    @include media(575){
+                        @include resa('margin-top', 6px);
+                    }
+                }
+            }
+            &__flex{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                @include media(575){
+                    flex-direction: column;
+                }
+            }
+            &__bg{
+                @include media(576){
+                    display: block;
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+            &__right{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+            &__info{
+                color: #FAFAFA;
+                @include res('font-size', 18px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('line-height', 43px);
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 24px);
+                }
+            }
+            &__img{
+                @include res('width', 500px);
+                @include media(575){
+                    width: 100%;
+                    @include resa('margin-top', 30px);
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
