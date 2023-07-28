@@ -181,6 +181,10 @@
         }
     }
     &__compets{
+        @include res('margin-top', -172px);
+        @include media(575){
+            margin-top: 0;
+        }
         &-row{
             display: flex;
             justify-content: space-between;
@@ -191,6 +195,16 @@
             }
         }
         .teachers{
+            &__image{
+                @include res('width', 435px);
+                @include res('height', 603px);
+                @include media(575){
+                    @include resa('height', 125px);
+                    @include resa('width', 86.73px);
+                    left: 0;
+                    @include resa('top', -125px);
+                }
+            }
             &__row{
                 &:nth-of-type(2){
                     .teachers__item{
