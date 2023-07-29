@@ -594,6 +594,10 @@
   padding-bottom: 6.1458333333vw;
 }
 
+.intro_publications {
+  padding-bottom: 0;
+}
+
 .intro_rates {
   padding-bottom: 8.6458333333vw;
 }
@@ -1081,6 +1085,31 @@
 }
 
 .intro_compets .intro__img img {
+  width: 100%;
+}
+
+.intro_publications .intro {
+  padding-top: 0;
+}
+
+.intro_publications .intro__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro_publications .intro__breadcrumbs {
+  margin-bottom: 2.0833333333vw;
+}
+
+.intro_publications .intro__btn-p {
+  max-width: 16.6666666667vw;
   width: 100%;
 }
 
@@ -5360,6 +5389,10 @@ ul {
   .intro_compets .intro__img {
     width: 100%;
     margin-top: 8.3333333333vw;
+  }
+
+  .intro_publications .intro__btn-p {
+    max-width: 50vw;
   }
 
   .advantages {

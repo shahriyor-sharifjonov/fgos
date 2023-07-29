@@ -7,6 +7,9 @@
         @include resa('padding-top', 55px);
         @include resa('padding-bottom', 30px);
     }
+    &_publications{
+        padding-bottom: 0;
+    }
     &_rates{
         @include res('padding-bottom', 166px);
     }
@@ -577,6 +580,28 @@
                 }
                 img{
                     width: 100%;
+                }
+            }
+        }
+    }
+    &_publications{
+        .intro{
+            padding-top: 0;
+            &__body{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            &__breadcrumbs{
+                @include res('margin-bottom', 40px);
+            }
+            &__btn{
+                &-p{
+                    @include res('max-width', 320px);
+                    width: 100%;
+                    @include media(575){
+                        @include resa('max-width', 180px);
+                    }
                 }
             }
         }
