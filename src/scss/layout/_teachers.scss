@@ -602,6 +602,7 @@
     }
     &__publications{
         @include res('margin-top', -90px);
+        @include res('padding-bottom', 58px);
         .teachers{
             &__top{
                 &:last-of-type{
