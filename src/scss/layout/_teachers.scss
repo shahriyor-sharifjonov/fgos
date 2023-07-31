@@ -901,6 +901,34 @@
             }
         }
     }
+    &__media{
+        @include res('margin-top', -227px);
+        .teachers{
+            &__img{
+                overflow: hidden;
+                @include res('border-radius', 10px);
+                @include res('min-width', 60px);
+                @include res('width', 60px);
+                @include res('height', 60px);
+                @include media(575){
+                    @include resa('top', -120px);
+                    @include resa('height', 24px);
+                    @include resa('width', 24px);
+                    @include resa('min-width', 24px);
+                    @include resa('border-radius', 5px);
+                }
+            }
+            &__image{
+                @include res('height', 750px);
+                @include res('width', 538px);
+                right: 0;
+                @include media(575){
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
     &__title{
         color: #FFF;
         font-family: Gilroy;

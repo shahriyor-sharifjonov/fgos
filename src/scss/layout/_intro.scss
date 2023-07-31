@@ -224,9 +224,10 @@
         @include media(576){
             @include resa('height', 38px);
             @include resa('font-size', 12px);
-            @include resa('line-height', 34px);
             @include resa('border-radius', 6px);
-            @include resa('width', 180px);
+            width: max-content;
+            @include resa('padding-left', 7px);
+            @include resa('padding-right', 7px);
         }
         &:hover{
             background: lighten($color: #325CFE, $amount: 5);
@@ -605,5 +606,8 @@
                 }
             }
         }
+    }
+    &_media{
+        @include res('padding-bottom', 254px);
     }
 }

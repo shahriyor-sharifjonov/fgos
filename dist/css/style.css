@@ -1113,6 +1113,10 @@
   width: 100%;
 }
 
+.intro_media {
+  padding-bottom: 13.2291666667vw;
+}
+
 .advantages {
   padding-bottom: 1.0416666667vw;
   position: relative;
@@ -2106,6 +2110,24 @@
   line-height: 120%;
   font-style: normal;
   font-weight: 300;
+}
+
+.teachers__media {
+  margin-top: -11.8229166667vw;
+}
+
+.teachers__media .teachers__img {
+  overflow: hidden;
+  border-radius: 0.5208333333vw;
+  min-width: 3.125vw;
+  width: 3.125vw;
+  height: 3.125vw;
+}
+
+.teachers__media .teachers__image {
+  height: 39.0625vw;
+  width: 28.0208333333vw;
+  right: 0;
 }
 
 .teachers__title {
@@ -5605,9 +5627,12 @@ ul {
   .intro__btn {
     height: 10.5555555556vw;
     font-size: 3.3333333333vw;
-    line-height: 9.4444444444vw;
     border-radius: 1.6666666667vw;
-    width: 50vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding-left: 1.9444444444vw;
+    padding-right: 1.9444444444vw;
   }
 
   .intro__btn-p {
@@ -6622,6 +6647,19 @@ ul {
 
   .teachers__publications .publications__info {
     font-size: 2.5vw;
+  }
+
+  .teachers__media .teachers__img {
+    top: -33.3333333333vw;
+    height: 6.6666666667vw;
+    width: 6.6666666667vw;
+    min-width: 6.6666666667vw;
+    border-radius: 1.3888888889vw;
+  }
+
+  .teachers__media .teachers__image {
+    left: auto;
+    right: 0;
   }
 
   .teachers__title {
