@@ -1,12 +1,14 @@
 .diplomas{
     @include res('padding-bottom', 40px);
     position: relative;
+    z-index: 1;
     @include media(575){
         @include resa('padding-bottom', 130px);
     }
     &__publications{
+        @include res('padding-bottom', 60px);
         @include media(575){
-            @include resa('padding-bottom', 50px);
+            @include resa('padding-bottom', 30px);
         }
         .publications{
             &__row{

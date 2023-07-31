@@ -4568,6 +4568,11 @@
 .diplomas {
   padding-bottom: 2.0833333333vw;
   position: relative;
+  z-index: 1;
+}
+
+.diplomas__publications {
+  padding-bottom: 3.125vw;
 }
 
 .diplomas__publications .publications__row {
@@ -5053,6 +5058,126 @@
 
 .accept__btn:not(:last-of-type) {
   margin-right: 1.71875vw;
+}
+
+.patterns {
+  padding-bottom: 2.9166666667vw;
+  z-index: 2;
+}
+
+.patterns__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  padding-bottom: 1.4583333333vw;
+}
+
+.patterns__girl {
+  position: absolute;
+  left: 0;
+  bottom: -8.8541666667vw;
+  width: 28.9583333333vw;
+  height: 38.8020833333vw;
+  z-index: 1;
+}
+
+.patterns__girl img {
+  width: 100%;
+}
+
+.patterns__img {
+  width: 34.21875vw;
+  height: 19.1145833333vw;
+  border-radius: 1.0416666667vw;
+  overflow: hidden;
+  margin-top: 0.4166666667vw;
+}
+
+.patterns__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.patterns__subtitle {
+  color: #1D1D1D;
+  font-size: 1.3541666667vw;
+  line-height: 1.7708333333vw;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  max-width: 34.21875vw;
+  width: 100%;
+}
+
+.patterns__subtitle span {
+  color: #325CFE;
+}
+
+.patterns__content {
+  position: relative;
+  padding-top: 3.5416666667vw;
+  padding-bottom: 2.6041666667vw;
+  z-index: 2;
+}
+
+.patterns__content::before {
+  content: "";
+  position: absolute;
+  background: url(../img/teachers-bg.png) center/cover no-repeat;
+  height: 100%;
+  width: 82.8125vw;
+  left: -19.2708333333vw;
+  z-index: -1;
+  top: 0;
+  border-top-right-radius: 1.5625vw;
+  border-bottom-right-radius: 1.5625vw;
+}
+
+.patterns__title {
+  color: #FFF;
+  font-size: 2.0833333333vw;
+  line-height: 2.8125vw;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 43.6458333333vw;
+  width: 100%;
+  margin-bottom: 1.40625vw;
+}
+
+.patterns__title span {
+  color: #325CFE;
+}
+
+.patterns__btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.0416666667vw;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 700;
+  width: 19.7916666667vw;
+  height: 3.6458333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5208333333vw;
+  background: #325CFE;
 }
 
 * {
@@ -7414,7 +7539,7 @@ ul {
   }
 
   .diplomas__publications {
-    padding-bottom: 13.8888888889vw;
+    padding-bottom: 8.3333333333vw;
   }
 
   .diplomas__publications .publications__row {
@@ -7674,5 +7799,51 @@ ul {
   .accept__btn:not(:last-of-type) {
     margin-right: 0;
     margin-bottom: 2.7777777778vw;
+  }
+
+  .patterns__wrapper {
+    padding-bottom: 4.1666666667vw;
+  }
+
+  .patterns__girl {
+    display: none;
+  }
+
+  .patterns__img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.2222222222vw;
+    border-radius: 2.7777777778vw;
+  }
+
+  .patterns__subtitle {
+    max-width: 100%;
+    font-size: 4.4444444444vw;
+    line-height: 140%;
+  }
+
+  .patterns__content {
+    padding-top: 5.5555555556vw;
+    padding-bottom: 5.5555555556vw;
+  }
+
+  .patterns__content::before {
+    border-radius: 0;
+    width: 100vw;
+    left: -4.1666666667vw;
+  }
+
+  .patterns__title {
+    font-size: 4.4444444444vw;
+    line-height: 140%;
+    max-width: 100%;
+    margin-bottom: 3.3333333333vw;
+  }
+
+  .patterns__btn {
+    font-size: 3.8888888889vw;
+    width: 100%;
+    height: 9.7222222222vw;
+    border-radius: 2.7777777778vw;
   }
 }
