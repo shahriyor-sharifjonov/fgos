@@ -215,6 +215,17 @@
             }
         }
         .teachers{
+            &__img{
+                overflow: hidden;
+                @include res('border-radius', 20px);
+                @include media(575){
+                    @include resa('top', -120px);
+                    @include resa('height', 120px);
+                    @include resa('width', 45px);
+                    @include resa('min-width', 45px);
+                    @include resa('border-radius', 10px);
+                }
+            }
             &__image{
                 @include res('width', 435px);
                 @include res('height', 603px);
@@ -589,6 +600,306 @@
             }
         }
     }
+    &__publications{
+        @include res('margin-top', -90px);
+        .teachers{
+            &__top{
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+            &__img{
+                overflow: hidden;
+                @include res('border-radius', 10px);
+                @include res('width', 44px);
+                @include res('min-width', 44px);
+                @include res('height', 44px);
+                @include media(575){
+                    @include resa('top', -120px);
+                    @include resa('height', 24px);
+                    @include resa('width', 24px);
+                    @include resa('min-width', 24px);
+                    @include resa('border-radius', 5px);
+                }
+            }
+            &__image{
+                left: 0;
+                right: auto;
+            }
+            &__row{
+                justify-content: flex-end;
+                @include media(575){
+                    justify-content: flex-start;
+                }
+                &:nth-of-type(2){
+                    @include media(575){
+                        width: 100%;
+                        position: relative;
+                        overflow-x: auto;
+                    }
+                    .teachers__item{
+                        width: 100%;
+                        max-width: 100%;
+                        @include res('padding-top', 34px);
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-bottom: 0;
+                        @include media(575){
+                            @include resa('padding-top', 20px);
+                            padding-left: 0;
+                            padding-right: 0;
+                            padding-bottom: 0;
+                            margin-top: 0;
+                            width: max-content;
+                            max-width: max-content;
+                        }
+                    }
+                }
+            }
+            &__item{
+                width: max-content;
+                max-width: max-content;
+                @include media(575){
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            &__subtitle{
+                @include media(575){
+                    @include resa('font-size', 14px);
+                }
+            }
+        }
+        .publications{
+            &__top{
+                background: #2C2C2C;
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                width: 100%;
+                .publications__item{
+                    &:not(:last-of-type){
+                        border-right: solid #414141;
+                        @include res('border-width', 1px);
+                    }
+                }
+            }
+            &__title{
+                @include res('padding-left', 60px);
+                @include res('margin-bottom', 21px);
+                color: #1A1A1A;
+                @include res('font-size', 40px);
+                @include res('line-height', 52px);
+                font-style: normal;
+                font-weight: 800;
+                @include media(575){
+                    @include resa('font-size', 18px);
+                    @include resa('margin-bottom', 15px);
+                    @include resa('padding-left', 10px);
+                    @include resa('line-height', 24px);
+                }
+            }
+            &__item{
+                @include res('padding-right', 15px);
+                @include res('padding-left', 15px);
+                @include res('padding-top', 29px);
+                @include res('padding-bottom', 27px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include media(575){
+                    @include resa('padding-right', 8px);
+                    @include resa('padding-left', 8px);
+                    @include resa('padding-top', 15px);
+                    @include resa('padding-bottom', 15px);
+                }
+                &:not(:last-of-type){
+                    border-right: solid #282828;
+                    @include res('border-width', 1px);
+                }
+                &.first{
+                    @include res('width', 470px);
+                    @include res('min-width', 470px);
+                    @include res('max-width', 470px);
+                    @include media(575){
+                        @include resa('width', 180px);
+                        @include resa('min-width', 180px);
+                        @include resa('max-width', 180px);
+                    }
+                }
+                &.second{
+                    @include res('width', 165px);
+                    @include res('min-width', 165px);
+                    @include res('max-width', 165px);
+                    @include media(575){
+                        @include resa('width', 120px);
+                        @include resa('min-width', 120px);
+                        @include resa('max-width', 120px);
+                    }
+                }
+                &.third{
+                    @include res('width', 296px);
+                    @include res('min-width', 296px);
+                    @include res('max-width', 296px);
+                    @include media(575){
+                        @include resa('width', 160px);
+                        @include resa('min-width', 160px);
+                        @include resa('max-width', 160px);
+                    }
+                }
+                &.fourth{
+                    @include res('width', 247px);
+                    @include res('min-width', 247px);
+                    @include res('max-width', 247px);
+                    @include media(575){
+                        @include resa('width', 160px);
+                        @include resa('min-width', 160px);
+                        @include resa('max-width', 160px);
+                    }
+                }
+            }
+            &__subtitle{
+                text-align: center;
+                color: #FFF;
+                @include res('font-size', 16px);
+                @include res('line-height', 22px);
+                font-style: normal;
+                font-weight: 700;
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 16px);
+                }
+            }
+            &__content{
+                width: 100%;
+            }
+            &__line{
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                &:nth-of-type(even){
+                    background: #F5F7FF;
+                }
+                .publications__item{
+                    @include res('padding-top', 14px);
+                    @include res('padding-bottom', 12px);
+                    @include media(575){
+                        @include resa('padding', 7px);
+                    }
+                    &:not(:last-of-type){
+                        border-right: solid #41414110;
+                        @include res('border-width', 1px);
+                    }
+                    &.first{
+                        justify-content: flex-start;
+                        @include res('padding-left', 32px);
+                        @include media(575){
+                            @include resa('padding-left', 7px);
+                        }
+                    }
+                }
+            }
+            &__row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &__img{
+                @include res('width', 24px);
+                @include res('min-width', 24px);
+                @include res('margin-right', 10px);
+                line-height: 0;
+                @include media(575){
+                    @include resa('width', 12px);
+                    @include resa('min-width', 12px);
+                    @include resa('margin-right', 10px);
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    line-height: 0;
+                }
+            }
+            &__p{
+                color: #161616;
+                text-align: center;
+                @include res('font-size', 22px);
+                @include res('line-height', 22px);
+                font-style: normal;
+                font-weight: 500;
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 12px);
+                }
+            }
+            &__text{
+                color: #161616;
+                text-align: center;
+                @include res('font-size', 22px);
+                @include res('line-height', 22px);
+                font-style: normal;
+                @include media(575){
+                    @include resa('font-size', 12px);
+                    @include resa('line-height', 12px);
+                }
+            }
+            &__desc{
+                color: #000;
+                @include res('font-size', 14px);
+                @include res('line-height', 26px);
+                font-style: normal;
+                font-weight: 500;
+                @include media(575){
+                    @include resa('font-size', 10px);
+                    @include resa('line-height', 14px);
+                }
+            }
+            &__bottom{
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                @include res('border-bottom-right-radius', 30px);
+                @include res('border-bottom-left-radius', 30px);
+                background: #2C2C2C;
+                width: 100%;
+                @include media(575){
+                    @include resa('border-bottom-right-radius', 15px);
+                    @include resa('border-bottom-left-radius', 15px);
+                }
+                .publications__item{
+                    &.second{
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+            &__txt{
+                color: #325CFE;
+                text-align: center;
+                @include res('font-size', 14px);
+                line-height: 140%;
+                font-style: normal;
+                font-weight: 700;
+                text-decoration-line: underline;
+                @include res('margin-bottom', 5px);
+                @include media(575){
+                    @include resa('font-size', 10px);
+                    @include resa('margin-bottom', 5px);
+                }
+            }
+            &__info{
+                color: #FFF;
+                text-align: center;
+                @include res('font-size', 10px);
+                line-height: 120%;
+                font-style: normal;
+                font-weight: 300;
+                @include media(575){
+                    @include resa('font-size', 9px);
+                }
+            }
+        }
+    }
     &__title{
         color: #FFF;
         font-family: Gilroy;
@@ -722,7 +1033,7 @@
         text-transform: uppercase;
         @include media(575){
             @include resa('font-size', 16px);
-            @include res('line-height', 22px);
+            @include resa('line-height', 22px);
         }
     }
     &__desc{

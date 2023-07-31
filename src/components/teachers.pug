@@ -188,7 +188,9 @@ mixin songs-teachers()
     .teachers.teachers__compets 
         .teachers__body.container 
             .teachers__wrapper 
-                .teachers__row 
+                .teachers__row
+                    .teachers__image 
+                        img(src="@img/olympiads-teacher.png", alt="" draggable="false") 
                     .teachers__item 
                         .teachers__top 
                             .teachers__img 
@@ -206,8 +208,6 @@ mixin songs-teachers()
                             .teachers__img 
                                 img(src="@img/teachers-img-3.png", alt="" draggable="false")
                             p.teachers__subtitle Бесплатное участие
-                    .teachers__image 
-                        img(src="@img/olympiads-teacher.png", alt="" draggable="false")
                 .teachers__row 
                     .teachers__item
                         h2.teachers__title Заполните форму участника творческого конкурса автороской песни:
@@ -242,3 +242,161 @@ mixin songs-teachers()
                                 .teachers__diploma
                                     img(src="@img/compets-img.png", alt="" draggable="false") 
                 p.teachers__p #[span.bold АКЦИЯ:] Каждый #[span третий] диплом в подарок! Действует только до #[span 28 марта]!
+
+mixin publications-teachers()   
+    .teachers.teachers__publications 
+        .teachers__body.container 
+            .teachers__wrapper 
+                .teachers__row 
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-tick.png", alt="" draggable="false")
+                            p.teachers__subtitle публикуйте свои материалы в сми
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-tick.png", alt="" draggable="false")
+                            p.teachers__subtitle публикуйте материалы в печатных изданиях
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-tick.png", alt="" draggable="false")
+                            p.teachers__subtitle используем профессиональные печатные станки
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-tick.png", alt="" draggable="false")
+                            p.teachers__subtitle получите печатный сборник через 4,5 дня
+                    .teachers__image 
+                        img(src="@img/olympiads-teacher.png", alt="" draggable="false")
+                .teachers__row 
+                    .teachers__item
+                        h2.publications__title Таблица сравнения:
+                        .publications__top 
+                            .publications__item.first 
+                                p.publications__subtitle Критерий ПУБЛИКАЦИИ
+                            .publications__item.second 
+                                p.publications__subtitle Публикация на сайте СМИ
+                            .publications__item.third 
+                                p.publications__subtitle Публикация в печатном сборнике «Педагогика и образование»
+                            .publications__item.fourth 
+                                p.publications__subtitle Публикация в печатном журнале «Наука XXI века».
+                        .publications__content 
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Размещение статьи на сайте СМИ
+                                .publications__item.second   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Размещение материала в рецензируемом сборнике с ISSN
+                                .publications__item.second   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-cross.svg", alt="" draggable="false")
+                                        p.publications__p Нет
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Получение свидетельства о публикации в электронном виде
+                                .publications__item.second   
+                                    .publications__row
+                                        p.publications__text 100р
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Получение свидетельства о публикации в электронном виде
+                                .publications__item.second   
+                                    .publications__row
+                                        .publications__img 
+                                            img(src="@img/publications-cross.svg", alt="" draggable="false")
+                                        p.publications__p Нет
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Получение распечатанного свидетельства о публикации
+                                .publications__item.second   
+                                    .publications__row
+                                        .publications__img 
+                                            img(src="@img/publications-cross.svg", alt="" draggable="false")
+                                        p.publications__p Нет
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                            .publications__line 
+                                .publications__item.first   
+                                    p.publications__desc Получение авторского экземпляра печатной версии сборника
+                                .publications__item.second   
+                                    .publications__row
+                                        .publications__img 
+                                            img(src="@img/publications-cross.svg", alt="" draggable="false")
+                                        p.publications__p Нет
+                                .publications__item.third   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                                .publications__item.fourth   
+                                    .publications__row  
+                                        .publications__img 
+                                            img(src="@img/publications-tick.svg", alt="" draggable="false")
+                                        p.publications__p Да
+                        .publications__bottom 
+                            .publications__item.first
+                            .publications__item.second 
+                                .publications__wrapper  
+                                    p.publications__txt Опубликовать статью
+                                    p.publications__info Бесплатная публикация
+                            .publications__item.third 
+                                .publications__wrapper  
+                                    p.publications__txt Опубликовать статью
+                                    p.publications__info Всего 150 р./А4
+                            .publications__item.fourth 
+                                .publications__wrapper  
+                                    p.publications__txt Опубликовать статью
+                                    p.publications__info Всего 150 р./А4

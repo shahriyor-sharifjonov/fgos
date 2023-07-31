@@ -1484,6 +1484,11 @@
           align-items: flex-start;
 }
 
+.teachers__compets .teachers__img {
+  overflow: hidden;
+  border-radius: 1.0416666667vw;
+}
+
 .teachers__compets .teachers__image {
   width: 22.65625vw;
   height: 31.40625vw;
@@ -1843,6 +1848,263 @@
 
 .teachers__compets .teachers__p span.bold {
   font-weight: 700;
+}
+
+.teachers__publications {
+  margin-top: -4.6875vw;
+}
+
+.teachers__publications .teachers__top:last-of-type {
+  margin-bottom: 0;
+}
+
+.teachers__publications .teachers__img {
+  overflow: hidden;
+  border-radius: 0.5208333333vw;
+  width: 2.2916666667vw;
+  min-width: 2.2916666667vw;
+  height: 2.2916666667vw;
+}
+
+.teachers__publications .teachers__image {
+  left: 0;
+  right: auto;
+}
+
+.teachers__publications .teachers__row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.teachers__publications .teachers__row:nth-of-type(2) .teachers__item {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 1.7708333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.teachers__publications .teachers__item {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.teachers__publications .publications__top {
+  background: #2C2C2C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+.teachers__publications .publications__top .publications__item:not(:last-of-type) {
+  border-right: solid #414141;
+  border-width: 0.0520833333vw;
+}
+
+.teachers__publications .publications__title {
+  padding-left: 3.125vw;
+  margin-bottom: 1.09375vw;
+  color: #1A1A1A;
+  font-size: 2.0833333333vw;
+  line-height: 2.7083333333vw;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.teachers__publications .publications__item {
+  padding-right: 0.78125vw;
+  padding-left: 0.78125vw;
+  padding-top: 1.5104166667vw;
+  padding-bottom: 1.40625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teachers__publications .publications__item:not(:last-of-type) {
+  border-right: solid #282828;
+  border-width: 0.0520833333vw;
+}
+
+.teachers__publications .publications__item.first {
+  width: 24.4791666667vw;
+  min-width: 24.4791666667vw;
+  max-width: 24.4791666667vw;
+}
+
+.teachers__publications .publications__item.second {
+  width: 8.59375vw;
+  min-width: 8.59375vw;
+  max-width: 8.59375vw;
+}
+
+.teachers__publications .publications__item.third {
+  width: 15.4166666667vw;
+  min-width: 15.4166666667vw;
+  max-width: 15.4166666667vw;
+}
+
+.teachers__publications .publications__item.fourth {
+  width: 12.8645833333vw;
+  min-width: 12.8645833333vw;
+  max-width: 12.8645833333vw;
+}
+
+.teachers__publications .publications__subtitle {
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8333333333vw;
+  line-height: 1.1458333333vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.teachers__publications .publications__content {
+  width: 100%;
+}
+
+.teachers__publications .publications__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.teachers__publications .publications__line:nth-of-type(even) {
+  background: #F5F7FF;
+}
+
+.teachers__publications .publications__line .publications__item {
+  padding-top: 0.7291666667vw;
+  padding-bottom: 0.625vw;
+}
+
+.teachers__publications .publications__line .publications__item:not(:last-of-type) {
+  border-right: solid #41414110;
+  border-width: 0.0520833333vw;
+}
+
+.teachers__publications .publications__line .publications__item.first {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 1.6666666667vw;
+}
+
+.teachers__publications .publications__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teachers__publications .publications__img {
+  width: 1.25vw;
+  min-width: 1.25vw;
+  margin-right: 0.5208333333vw;
+  line-height: 0;
+}
+
+.teachers__publications .publications__img img {
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+.teachers__publications .publications__p {
+  color: #161616;
+  text-align: center;
+  font-size: 1.1458333333vw;
+  line-height: 1.1458333333vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.teachers__publications .publications__text {
+  color: #161616;
+  text-align: center;
+  font-size: 1.1458333333vw;
+  line-height: 1.1458333333vw;
+  font-style: normal;
+}
+
+.teachers__publications .publications__desc {
+  color: #000;
+  font-size: 0.7291666667vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.teachers__publications .publications__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom-right-radius: 1.5625vw;
+  border-bottom-left-radius: 1.5625vw;
+  background: #2C2C2C;
+  width: 100%;
+}
+
+.teachers__publications .publications__bottom .publications__item.second {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.teachers__publications .publications__txt {
+  color: #325CFE;
+  text-align: center;
+  font-size: 0.7291666667vw;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-bottom: 0.2604166667vw;
+}
+
+.teachers__publications .publications__info {
+  color: #FFF;
+  text-align: center;
+  font-size: 0.5208333333vw;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .teachers__title {
@@ -5592,6 +5854,14 @@ ul {
             justify-content: flex-start;
   }
 
+  .teachers__compets .teachers__img {
+    top: -33.3333333333vw;
+    height: 33.3333333333vw;
+    width: 12.5vw;
+    min-width: 12.5vw;
+    border-radius: 2.7777777778vw;
+  }
+
   .teachers__compets .teachers__image {
     height: 34.7222222222vw;
     width: 24.0916666667vw;
@@ -5746,6 +6016,135 @@ ul {
     margin-top: 1.6666666667vw;
   }
 
+  .teachers__publications .teachers__img {
+    top: -33.3333333333vw;
+    height: 6.6666666667vw;
+    width: 6.6666666667vw;
+    min-width: 6.6666666667vw;
+    border-radius: 1.3888888889vw;
+  }
+
+  .teachers__publications .teachers__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .teachers__publications .teachers__row:nth-of-type(2) {
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .teachers__publications .teachers__row:nth-of-type(2) .teachers__item {
+    padding-top: 5.5555555556vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .teachers__publications .teachers__item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .teachers__publications .teachers__subtitle {
+    font-size: 3.8888888889vw;
+  }
+
+  .teachers__publications .publications__title {
+    font-size: 5vw;
+    margin-bottom: 4.1666666667vw;
+    padding-left: 2.7777777778vw;
+    line-height: 6.6666666667vw;
+  }
+
+  .teachers__publications .publications__item {
+    padding-right: 2.2222222222vw;
+    padding-left: 2.2222222222vw;
+    padding-top: 4.1666666667vw;
+    padding-bottom: 4.1666666667vw;
+  }
+
+  .teachers__publications .publications__item.first {
+    width: 50vw;
+    min-width: 50vw;
+    max-width: 50vw;
+  }
+
+  .teachers__publications .publications__item.second {
+    width: 33.3333333333vw;
+    min-width: 33.3333333333vw;
+    max-width: 33.3333333333vw;
+  }
+
+  .teachers__publications .publications__item.third {
+    width: 44.4444444444vw;
+    min-width: 44.4444444444vw;
+    max-width: 44.4444444444vw;
+  }
+
+  .teachers__publications .publications__item.fourth {
+    width: 44.4444444444vw;
+    min-width: 44.4444444444vw;
+    max-width: 44.4444444444vw;
+  }
+
+  .teachers__publications .publications__subtitle {
+    font-size: 3.3333333333vw;
+    line-height: 4.4444444444vw;
+  }
+
+  .teachers__publications .publications__line .publications__item {
+    padding: 1.9444444444vw;
+  }
+
+  .teachers__publications .publications__line .publications__item.first {
+    padding-left: 1.9444444444vw;
+  }
+
+  .teachers__publications .publications__img {
+    width: 3.3333333333vw;
+    min-width: 3.3333333333vw;
+    margin-right: 2.7777777778vw;
+  }
+
+  .teachers__publications .publications__p {
+    font-size: 3.3333333333vw;
+    line-height: 3.3333333333vw;
+  }
+
+  .teachers__publications .publications__text {
+    font-size: 3.3333333333vw;
+    line-height: 3.3333333333vw;
+  }
+
+  .teachers__publications .publications__desc {
+    font-size: 2.7777777778vw;
+    line-height: 3.8888888889vw;
+  }
+
+  .teachers__publications .publications__bottom {
+    border-bottom-right-radius: 4.1666666667vw;
+    border-bottom-left-radius: 4.1666666667vw;
+  }
+
+  .teachers__publications .publications__txt {
+    font-size: 2.7777777778vw;
+    margin-bottom: 1.3888888889vw;
+  }
+
+  .teachers__publications .publications__info {
+    font-size: 2.5vw;
+  }
+
   .teachers__title {
     font-size: 3.8888888889vw;
     line-height: 6.1111111111vw;
@@ -5805,7 +6204,7 @@ ul {
 
   .teachers__subtitle {
     font-size: 4.4444444444vw;
-    line-height: 1.1458333333vw;
+    line-height: 6.1111111111vw;
   }
 
   .teachers__desc:not(:last-of-type) {
