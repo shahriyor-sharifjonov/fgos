@@ -9,7 +9,7 @@ mixin diplomas()
                     img(src="@img/diplomas-img.png", alt="" draggable="false")
 
 mixin songs-diplomas()
-    .diplomas
+    .diplomas.diplomas__songs
         .diplomas__body.container 
             h2.diplomas__title Участвуйте в #[span КОНКУРСАХ] #[br] и получайте дипломы победителей
             .diplomas__row  
@@ -17,3 +17,50 @@ mixin songs-diplomas()
                     img(src="@img/diplomas-girl.png", alt="" draggable="false")
                 .diplomas__img 
                     img(src="@img/diplomas-img.png", alt="" draggable="false")
+
+mixin publications-diplomas()
+    .diplomas.diplomas__publications
+        .diplomas__body.container 
+            h2.diplomas__title выбирайте #[span удобный] и подходящий вариант для #[span публикации]
+            .diplomas__content 
+                .diplomas__item
+                    .diplomas__wrapper
+                        .diplomas__top 
+                            .diplomas__image 
+                                img(src="@img/diplomas-img-2.png", alt="" draggable="false")
+                            p.diplomas__subtitle публикация в сетевом издании ПОРТАЛА
+                        ul.diplomas__list 
+                            li.diplomas__li 1. Вы отправляете материал через специальную форму на сайте;
+                            li.diplomas__li 2. Мы сразу размещаем его на портале;
+                            li.diplomas__li 3. Вы заполняете данные для формирования свидетельства о публикации;
+                            li.diplomas__li 4. Оплачиваете выдачу свидетельства и скачиваете его;
+                            li.diplomas__li 5. Наши модераторы просматривают опубликованный материал.
+                    .diplomas__bottom
+                        p.diplomas__info публикация МНГНОВЕННО
+                        p.diplomas__p Публикация беслатана, свидетельство 100р.
+                        button(type="button").diplomas__btn Опубликовать статью в СМИ
+                .diplomas__item
+                    .diplomas__wrapper
+                        .diplomas__top 
+                            .diplomas__image 
+                                img(src="@img/diplomas-img-3.png", alt="" draggable="false")
+                            p.diplomas__subtitle публикация в ПЕЧАТНОМ сборнике «НАУКА XXI века»
+                        ul.diplomas__list 
+                            li.diplomas__li 1. Загружаете файл со статьей через специальную удобную форму;
+                            li.diplomas__li 2. Заполняете данные об авторе и статье;
+                            li.diplomas__li 3. Оплачиваете свидетельство и справку о публикации;
+                            li.diplomas__li 4. Материал автоматически включается в очередной сборник;
+                            li.diplomas__li 5. После оплаты Вы можете скачать свидетельство и справку о публикации;
+                            li.diplomas__li 6. Отправляем Вам книгу в электронном виде;
+                            li.diplomas__li 7. Производим почтовую рассылку авторских сборников;
+                    .diplomas__bottom
+                        p.diplomas__info Получите издание через 4-5 дней
+                        p.diplomas__p Стоимость будет определена после публикации.
+                        button(type="button").diplomas__btn Опубликовать в издании
+            .publications__row 
+                .publications__img 
+                    img(src="@img/publications-img-2.png", alt="" draggable="false")
+                .publications__right 
+                    h2.publications__title печатаем на #[span профессиональном] промышленном оборудовании
+                    p.publications__desc Среднее время от оплаты до получения сборника в электронном виде:
+                    p.publications__date За 2017г. - 2023г.: #[span 4,5] дня. 

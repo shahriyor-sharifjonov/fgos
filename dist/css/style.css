@@ -4570,6 +4570,210 @@
   position: relative;
 }
 
+.diplomas__publications .publications__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #222222;
+  margin-top: 2.0833333333vw;
+  padding-right: 7.8125vw;
+  border-radius: 1.5625vw;
+  overflow: hidden;
+}
+
+.diplomas__publications .publications__img {
+  width: 19.7916666667vw;
+  min-width: 19.7916666667vw;
+  height: 14.5833333333vw;
+  overflow: hidden;
+  margin-right: 2.0833333333vw;
+}
+
+.diplomas__publications .publications__img img {
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.diplomas__publications .publications__title {
+  color: #FFF;
+  font-size: 1.7708333333vw;
+  line-height: 2.6041666667vw;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1.1458333333vw;
+}
+
+.diplomas__publications .publications__title span {
+  color: #325CFE;
+}
+
+.diplomas__publications .publications__desc {
+  color: #FFF;
+  font-size: 0.9375vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0.2604166667vw;
+}
+
+.diplomas__publications .publications__date {
+  color: #FFF;
+  font-size: 1.7708333333vw;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.diplomas__publications .publications__date span {
+  font-weight: 700;
+}
+
+.diplomas__publications .diplomas__title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.diplomas__publications .diplomas__title::before {
+  width: 100vw;
+  left: -19.2708333333vw;
+}
+
+.diplomas__publications .diplomas__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-top: -2.6041666667vw;
+  margin-bottom: 2.0833333333vw;
+}
+
+.diplomas__publications .diplomas__item {
+  width: calc(50% - 0.521vw);
+  border-radius: 1.5625vw;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 0.521vw 0px rgba(2, 2, 2, 0.1);
+          box-shadow: 0px 0px 0.521vw 0px rgba(2, 2, 2, 0.1);
+  padding-top: 2.2395833333vw;
+  padding-right: 1.3020833333vw;
+  padding-bottom: 2.2395833333vw;
+  padding-left: 3.3333333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diplomas__publications .diplomas__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.9375vw;
+}
+
+.diplomas__publications .diplomas__image {
+  width: 4.1666666667vw;
+  min-width: 4.1666666667vw;
+  height: 4.1666666667vw;
+  border-radius: 1.0416666667vw;
+  overflow: hidden;
+  margin-right: 1.0416666667vw;
+}
+
+.diplomas__publications .diplomas__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.diplomas__publications .diplomas__subtitle {
+  color: #000;
+  font-size: 1.3541666667vw;
+  line-height: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.diplomas__publications .diplomas__list {
+  margin-bottom: 3.9583333333vw;
+}
+
+.diplomas__publications .diplomas__li {
+  color: #000;
+  font-size: 0.7291666667vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.diplomas__publications .diplomas__li:not(:last-of-type) {
+  margin-bottom: 0.2083333333vw;
+}
+
+.diplomas__publications .diplomas__info {
+  color: rgba(50, 92, 254, 0.4);
+  font-size: 1.3541666667vw;
+  line-height: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.3125vw;
+}
+
+.diplomas__publications .diplomas__p {
+  color: #000;
+  font-size: 0.9375vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 1.3541666667vw;
+}
+
+.diplomas__publications .diplomas__btn {
+  text-align: center;
+  color: #FFF;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17.1875vw;
+  height: 3.125vw;
+  border-radius: 10px;
+  border-radius: 0.5208333333vw;
+  background: #325CFE;
+}
+
 .diplomas__title {
   color: #FFF;
   font-size: 2.0833333333vw;
@@ -7207,6 +7411,120 @@ ul {
 
   .diplomas {
     padding-bottom: 36.1111111111vw;
+  }
+
+  .diplomas__publications {
+    padding-bottom: 13.8888888889vw;
+  }
+
+  .diplomas__publications .publications__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 0;
+    padding-top: 5.5555555556vw;
+  }
+
+  .diplomas__publications .publications__img {
+    margin-right: 0;
+    margin-top: 5.5555555556vw;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+  }
+
+  .diplomas__publications .publications__right {
+    padding-left: 5.5555555556vw;
+    padding-right: 5.5555555556vw;
+  }
+
+  .diplomas__publications .publications__title {
+    font-size: 4.4444444444vw;
+    line-height: 6.1111111111vw;
+  }
+
+  .diplomas__publications .publications__desc {
+    font-size: 3.8888888889vw;
+    line-height: 140%;
+    margin-bottom: 1.3888888889vw;
+  }
+
+  .diplomas__publications .publications__date {
+    font-size: 5.5555555556vw;
+  }
+
+  .diplomas__publications .diplomas__title::before {
+    width: 100vw;
+    left: -4.1666666667vw;
+  }
+
+  .diplomas__publications .diplomas__content {
+    margin-top: -8.3333333333vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5.5555555556vw;
+  }
+
+  .diplomas__publications .diplomas__item {
+    width: 100%;
+    padding: 5.5555555556vw;
+    border-radius: 4.1666666667vw;
+  }
+
+  .diplomas__publications .diplomas__item:not(:last-of-type) {
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .diplomas__publications .diplomas__top {
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .diplomas__publications .diplomas__image {
+    width: 8.3333333333vw;
+    min-width: 8.3333333333vw;
+    height: 8.3333333333vw;
+    border-radius: 1.6666666667vw;
+    margin-right: 2.7777777778vw;
+  }
+
+  .diplomas__publications .diplomas__subtitle {
+    font-size: 3.8888888889vw;
+    line-height: 6.1111111111vw;
+    max-width: 61.1111111111vw;
+  }
+
+  .diplomas__publications .diplomas__list {
+    margin-bottom: 11.1111111111vw;
+  }
+
+  .diplomas__publications .diplomas__li {
+    font-size: 3.3333333333vw;
+    line-height: 6.6666666667vw;
+  }
+
+  .diplomas__publications .diplomas__info {
+    font-size: 4.4444444444vw;
+    line-height: 7.2222222222vw;
+  }
+
+  .diplomas__publications .diplomas__p {
+    font-size: 3.3333333333vw;
+    line-height: 6.1111111111vw;
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .diplomas__publications .diplomas__btn {
+    width: 100%;
+    height: 9.7222222222vw;
+    font-size: 3.8888888889vw;
+    border-radius: 2.2222222222vw;
   }
 
   .diplomas__title {
