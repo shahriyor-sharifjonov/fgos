@@ -8,8 +8,28 @@
     }
     &__second{
         @include res('margin-top', -172px);
-        .teachers__image{
-            @include res('right', 160px);
+        .teachers{
+            &__title{
+                @include res('margin-top', 25px);
+                @include res('max-width', 900px);
+                width: 100%;
+                padding-left: 0;
+                margin-bottom: 0;
+                @include media(575){
+                    @include resa('margin-top', 15px);
+                    max-width: 100%;
+                }
+                &::before{
+                    @include res('width', 1580px);
+                    @include res('left', -400px);
+                    height: 100%;
+                    @include media(575){
+                        width: calc(100% + 8.333vw);
+                        @include resa('left', -15px);
+                        @include resa('right', -15px);
+                    }
+                }
+            }
         }
     }
     &__olympiads{
@@ -62,8 +82,8 @@
                 width: 100%;
                 @include media(575){
                     @include resa('font-size', 18px);
-                    max-width: 100%;
                     @include resa('margin-bottom', 8px);
+                    max-width: 100%;
                 }
                 &::before{
                     display: none;
@@ -587,6 +607,8 @@
             @include resa('font-size', 14px);
             @include resa('line-height', 22px);
             @include resa('margin-bottom', 50px);
+            width: calc(100% + 4.167vw);
+            max-width: calc(100% + 4.167vw);
         }
         &::before{
             content: '';
@@ -605,7 +627,7 @@
                 border-start-end-radius: 0;
                 border-end-end-radius: 0;
             }
-    }
+        }
         span{
             color: #325CFE;
         }
@@ -721,4 +743,4 @@
             @include resa('line-height', 14px);
         }
     }
-}
+} 
