@@ -1,0 +1,16 @@
+mixin forms()
+    .forms 
+        form(action="").forms__body.container 
+            h2.forms__title Для публикации Вашей статьи на потрале заполните форму:
+            .forms__row
+                .forms__left
+                    input(type="text" placeholder="Введите ваше имя, фамилию и отчество").forms__input
+                    input(type="email" placeholder="Введите ваш e-mail").forms__input
+                    input(type="text" placeholder="Введите тему вашей работы").forms__input
+                .forms__right 
+                    p.forms__p Вы получите такое свидетельство
+                    .forms__img 
+                        img(src="@img/patterns-img.png", alt="" draggable="false") 
+            p.forms__subtitle Прикрепите файл со статьей:
+            p.forms__desc Максимальный размер файла: 20МБ
+            .forms__

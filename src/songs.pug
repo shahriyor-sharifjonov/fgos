@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body.ultimate 
+        .wrapper  
+            include components/header 
+            +header 
+            main.main 
+                include components/intro 
+                +songs-intro
+                include components/teachers
+                +songs-teachers 
+                include components/people
+                +compets-people
+                include components/tutorial
+                +compets-tutorial
+                include components/training
+                +olympiads-training
+                include components/diplomas 
+                +songs-diplomas 
+                include components/samples 
+                +songs-samples
+                include components/calc 
+                +olympiads-calc
+                include components/templates 
+                +templates
+            include components/footer 
+            +footer
+        script(src="js/app.min.js") 

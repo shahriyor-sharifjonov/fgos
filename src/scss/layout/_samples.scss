@@ -3,6 +3,71 @@
     @include media(575){
         @include resa('padding-bottom', 70px);
     }
+    &__olympiads{
+        @include res('padding-bottom', 45px);
+        @include media(575){
+            @include resa('padding-bottom', 20px);
+        }
+        .samples{
+            &__title{
+                text-align: left;
+                position: relative;
+                @include res('padding-bottom', 80px);
+                color: #fff;
+                margin-bottom: 0;
+                @include media(575){
+                    @include resa('padding-top', 20px);
+                    @include resa('padding-bottom', 40px);
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    @include res('height', 385px);
+                    @include res('width', 1535px);
+                    @include res('left', -400px);
+                    background: url('../img/tutorial-bg.png') center / cover no-repeat;
+                    bottom: 0;
+                    z-index: -1;
+                    line-height: 0;
+                    @include media(575){
+                        width: 100vw;
+                        @include resa('left', -15px);
+                        height: 100%;
+                    }
+                }
+            }
+            &__content{
+                @include res('margin-top', -57px);
+                @include media(575){
+                    @include resa('margin-top', -20px);
+                }
+            }
+            &__right{
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                &.gray{
+                    background: #F8F8F8;
+                    @include media(575){
+                        background: #f1f0f0;
+                    }
+                }
+            }
+            &__txt{
+                color: #325CFE;
+                @include res('font-size', 18px);
+                @include res('line-height', 24px);
+                font-style: normal;
+                font-weight: 500;
+                @include res('margin-bottom', 9px);
+                @include media(575){
+                    @include resa('font-size', 10px);
+                    @include resa('line-height', 12px);
+                    @include resa('margin-bottom', 3px);
+                }
+            }
+        }
+    }
     &__title{
         color: #000;
         text-align: center;
@@ -113,6 +178,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: #fff;
         @include media(575){
             @include resa('padding-top', 17px);
             @include resa('padding-bottom', 17px);

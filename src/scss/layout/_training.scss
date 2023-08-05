@@ -4,6 +4,12 @@
     @include media(575){
         @include resa('padding-bottom', 23px);
     }
+    &__olympiads{
+        @include res('padding-bottom', 40px);
+        @include media(575){
+            @include resa('padding-bottom', 20px);
+        }
+    }
     &__row{
         display: flex;
         align-items: flex-start;

@@ -1,0 +1,29 @@
+mixin tutorial()
+    .tutorial 
+        .tutorial__body.container 
+            h2.tutorial__title Посмотрите #[span.bold видеоинструкцию] #[span (1,5 мин)]
+            a(href="#!").tutorial__img 
+                img(src="@img/tutorial-img.png", alt="" draggable="false")
+                button(type="button").tutorial__play 
+                    img(src="@img/play.svg", alt="" draggable="false")
+            a(href="#!").tutorial__link Перейти к категориям олимпиад →
+
+mixin internal-tutorial()
+    .tutorial.tutorial_internal 
+        .tutorial__body.container 
+            h2.tutorial__title Посмотрите #[span.bold видеоинструкцию] #[span (1,5 мин)]
+            a(href="#!").tutorial__img 
+                img(src="@img/tutorial-img.png", alt="" draggable="false")
+                button(type="button").tutorial__play 
+                    img(src="@img/play.svg", alt="" draggable="false")
+            a(href="#!").tutorial__link Перейти к категориям олимпиад →
+
+mixin compets-tutorial()
+    .tutorial.tutorial_compets
+        .tutorial__body.container 
+            h2.tutorial__title Посмотрите #[span.bold видеоинструкцию] #[span (1,5 мин)]
+            a(href="#!").tutorial__img 
+                img(src="@img/tutorial-img.png", alt="" draggable="false")
+                button(type="button").tutorial__play 
+                    img(src="@img/play.svg", alt="" draggable="false")
+            a(href="#!").tutorial__link Ознакомиться с положением о проведении конкурса
