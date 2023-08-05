@@ -2130,6 +2130,294 @@
   right: 0;
 }
 
+.teachers__media .teachers__media-row {
+  margin-bottom: 2.0833333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.teachers__media .teachers__row:nth-of-type(2) .teachers__item {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 2.0833333333vw;
+  padding-right: 3.125vw;
+  padding-left: 3.125vw;
+  padding-bottom: 3.6458333333vw;
+}
+
+.teachers__media .teachers__title {
+  padding: 0;
+  color: #060606;
+  max-width: 33.3333333333vw;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.teachers__media .teachers__title::before {
+  display: none;
+}
+
+.teachers__media .teachers__title.sm {
+  font-size: 1.5625vw;
+  line-height: 2.7083333333vw;
+  margin-bottom: 0.6770833333vw;
+}
+
+.teachers__media .teachers__left {
+  width: 100%;
+}
+
+.teachers__media .teachers__flex {
+  width: 100%;
+}
+
+.teachers__media .teachers__form {
+  padding-top: 2.34375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+.teachers__media .teachers__form-subtitle {
+  color: #1A1A1A;
+  font-size: 1.5625vw;
+  line-height: 2.7083333333vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.teachers__media .teachers__form-info {
+  color: #000;
+  font-size: 0.9375vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 0.9375vw;
+}
+
+.teachers__media .teachers__form-img {
+  width: 100%;
+  line-height: 0;
+  margin-bottom: 0.5208333333vw;
+}
+
+.teachers__media .teachers__form-img img {
+  width: 100%;
+  line-height: 0;
+}
+
+.teachers__media .teachers__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.teachers__media .teachers__link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.0416666667vw;
+  color: #325CFE;
+  font-size: 1.0416666667vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.teachers__media .teachers__link img {
+  width: 1.4583333333vw;
+  height: 1.4583333333vw;
+  margin-right: 0.4166666667vw;
+}
+
+.teachers__media .teachers__info {
+  color: #9D9D9D;
+  font-size: 0.9375vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.teachers__media .teachers__right {
+  max-width: 20.9375vw;
+  width: 100%;
+  margin-left: 3.125vw;
+}
+
+.teachers__media .teachers__right-p {
+  font-size: 0.9375vw;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.9895833333vw;
+}
+
+.teachers__media .teachers__diploma {
+  width: 100%;
+  border-radius: 0.625vw;
+  overflow: hidden;
+}
+
+.teachers__media .teachers__diploma img {
+  width: 100%;
+}
+
+.teachers__media .teachers__input {
+  width: 100%;
+  padding-top: 0.4166666667vw;
+  padding-bottom: 0.4166666667vw;
+  padding-left: 0.9375vw;
+  padding-right: 0.9375vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.125vw;
+  border-radius: 0.625vw;
+  border: solid #325CFE;
+  border-width: 0.0520833333vw;
+  background: #FFF;
+  font-size: 1.0416666667vw;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 1.0416666667vw;
+}
+
+.teachers__media .teachers__input:last-of-type {
+  margin-bottom: 1.5625vw;
+}
+
+.teachers__media .teachers__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teachers__media .teachers__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teachers__media .teachers__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teachers__media .teachers__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teachers__media .teachers__input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teachers__media .teachers__txt {
+  color: #000;
+  font-size: 0.9375vw;
+  line-height: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 0.9895833333vw;
+}
+
+.teachers__media .teachers__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.3020833333vw;
+}
+
+.teachers__media .teachers__checkbox-input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  width: 1.5625vw;
+  height: 1.5625vw;
+  border-radius: 0.3125vw;
+  border: solid #325CFE;
+  border-width: 0.1041666667vw;
+  background: #FFF;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  margin-right: 0.6770833333vw;
+}
+
+.teachers__media .teachers__checkbox-input:checked {
+  background: url("../img/tick.svg") center/contain no-repeat;
+}
+
+.teachers__media .teachers__label {
+  color: #1A1A1A;
+  font-size: 1.0416666667vw;
+  line-height: 2.7083333333vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.teachers__media .teachers__btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 700;
+  width: 19.53125vw;
+  height: 3.125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5208333333vw;
+  background: #325CFE;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.teachers__media .teachers__btn:hover {
+  background: #4b70fe;
+}
+
 .teachers__title {
   color: #FFF;
   font-family: Gilroy;
@@ -2260,6 +2548,17 @@
 
 .training__olympiads {
   padding-bottom: 2.0833333333vw;
+}
+
+.training__media::before {
+  content: "";
+  position: absolute;
+  top: -16.5104166667vw;
+  left: 0;
+  width: 61.4583333333vw;
+  height: 29.84375vw;
+  background: url("../img/training-before-2.png") center/cover no-repeat;
+  z-index: -1;
 }
 
 .training__row {
@@ -4359,6 +4658,8 @@
   bottom: -5.0520833333vw;
   width: 77.6041666667vw;
   height: 12.5vw;
+  border-top-left-radius: 1.5625vw;
+  border-bottom-left-radius: 1.5625vw;
 }
 
 .people__publications .people__title {
@@ -5085,6 +5386,10 @@
 .patterns {
   padding-bottom: 2.9166666667vw;
   z-index: 2;
+}
+
+.patterns__media {
+  padding-top: 6.7708333333vw;
 }
 
 .patterns__wrapper {
@@ -6662,6 +6967,135 @@ ul {
     right: 0;
   }
 
+  .teachers__media .teachers__media-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .teachers__media .teachers__row:nth-of-type(2) .teachers__item {
+    padding: 5.5555555556vw;
+  }
+
+  .teachers__media .teachers__title {
+    max-width: 100%;
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .teachers__media .teachers__title.sm {
+    font-size: 3.8888888889vw;
+    line-height: 140%;
+    margin-bottom: 1.6666666667vw;
+    font-weight: 600;
+  }
+
+  .teachers__media .teachers__form {
+    padding-top: 0;
+  }
+
+  .teachers__media .teachers__form-subtitle {
+    font-size: 4.4444444444vw;
+    line-height: 120%;
+    margin-bottom: 1.6666666667vw;
+  }
+
+  .teachers__media .teachers__form-info {
+    font-size: 3.8888888889vw;
+    line-height: 140%;
+    margin-bottom: 1.6666666667vw;
+  }
+
+  .teachers__media .teachers__form-img {
+    margin-bottom: 1.3888888889vw;
+  }
+
+  .teachers__media .teachers__texts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .teachers__media .teachers__link {
+    margin-right: 0;
+    font-size: 3.8888888889vw;
+    line-height: 140%;
+    margin-bottom: 0.8333333333vw;
+  }
+
+  .teachers__media .teachers__link img {
+    width: 3.8888888889vw;
+    height: 3.8888888889vw;
+    margin-right: 2.2222222222vw;
+  }
+
+  .teachers__media .teachers__info {
+    font-size: 3.6111111111vw;
+    line-height: 140%;
+  }
+
+  .teachers__media .teachers__right {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 5.5555555556vw;
+  }
+
+  .teachers__media .teachers__right-p {
+    font-size: 3.8888888889vw;
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .teachers__media .teachers__diploma {
+    border-radius: 1.6666666667vw;
+  }
+
+  .teachers__media .teachers__input {
+    padding: 2.2222222222vw;
+    height: 9.7222222222vw;
+    border-radius: 2.7777777778vw;
+    border-width: 0.2777777778vw;
+    font-size: 3.8888888889vw;
+    margin-bottom: 2.7777777778vw;
+  }
+
+  .teachers__media .teachers__input:last-of-type {
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .teachers__media .teachers__txt {
+    font-size: 3.3333333333vw;
+    line-height: 140%;
+    margin-bottom: 2.5vw;
+  }
+
+  .teachers__media .teachers__checkbox {
+    margin-bottom: 4.1666666667vw;
+  }
+
+  .teachers__media .teachers__checkbox-input {
+    width: 4.1666666667vw;
+    height: 4.1666666667vw;
+    border-width: 0.2777777778vw;
+    margin-right: 1.9444444444vw;
+    border-radius: 0.8333333333vw;
+  }
+
+  .teachers__media .teachers__label {
+    font-size: 3.0555555556vw;
+    line-height: 140%;
+  }
+
+  .teachers__media .teachers__btn {
+    font-size: 3.8888888889vw;
+    width: 100%;
+    height: 9.7222222222vw;
+    border-radius: 2.7777777778vw;
+  }
+
   .teachers__title {
     font-size: 3.8888888889vw;
     line-height: 6.1111111111vw;
@@ -6739,6 +7173,10 @@ ul {
 
   .training__olympiads {
     padding-bottom: 5.5555555556vw;
+  }
+
+  .training__media::before {
+    display: none;
   }
 
   .training__row {
@@ -7442,6 +7880,7 @@ ul {
   .people__publications::before {
     width: 100%;
     height: 27.7777777778vw;
+    border-radius: 0;
   }
 
   .people__publications .people__title::before {
@@ -7837,6 +8276,10 @@ ul {
   .accept__btn:not(:last-of-type) {
     margin-right: 0;
     margin-bottom: 2.7777777778vw;
+  }
+
+  .patterns__media {
+    padding-top: 8.3333333333vw;
   }
 
   .patterns__wrapper {

@@ -1,6 +1,12 @@
 .patterns{
     @include res('padding-bottom', 56px);
     z-index: 2;
+    &__media{
+        @include res('padding-top', 130px);
+        @include media(575){
+            @include resa('padding-top', 30px);
+        }
+    }
     &__wrapper{
         display: flex;
         flex-direction: column;
