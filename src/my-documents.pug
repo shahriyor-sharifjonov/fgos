@@ -13,22 +13,61 @@ html(lang="en")
             main.main 
                 include components/intro 
                 +introAdmin 
-                include components/advantages 
-                +advantages 
-                include components/teachers 
-                +teachers 
-                include components/training 
-                +training 
-                include components/documents 
-                +documents 
-                include components/benefits 
-                +benefits
-                include components/samples 
-                +samples 
-                include components/reviews 
-                +reviews 
-                include components/faq 
-                +faq 
+                section.cabinet 
+                    .cabinet__body.container 
+                        include components/cabinetSidebar 
+                        +cabinetSidebar 
+                        .cabinet__content
+                            .cabinet__item  
+                                include components/cabinetHeader 
+                                +cabinetHeader 
+                                h1.cabinet__title Дипломы к оплате: 
+                                .cabinet__documents 
+                                    .cabinet__documents-content 
+                                    .cabinet__documents-info
+                                        h2.cabinet__documents-title Поздравляем! Вы создали 1 документ и участвуете в акции "Третий документ в заказе - в подарок"!
+                                        p.cabinet__documents-p Создайте еще один документ и получите диплом в подарок.
+                                        button(type='button').cabinet__documents-btn Создать документ
+                                        p.cabinet__documents-subtitle Ваш заказ на текущий момент:
+                                        .cabinet__documents-table 
+                                            .cabinet__documents-table-row 
+                                                .cabinet__documents-table-num 1.
+                                                .cabinet__documents-table-title Диплом № 4435049
+                                                .cabinet__documents-table-price 140 ₽
+                                            .cabinet__documents-table-row 
+                                                .cabinet__documents-table-num 2.
+                                                .cabinet__documents-table-title Диплом № 4766668
+                                                .cabinet__documents-table-price 140 ₽
+                                            .cabinet__documents-table-row 
+                                                .cabinet__documents-table-num 3.
+                                                .cabinet__documents-table-title Диплом № 4837830
+                                                .cabinet__documents-table-price 0 ₽ (акция)
+                                            .cabinet__documents-table-row 
+                                                .cabinet__documents-table-num 4.
+                                                .cabinet__documents-table-title Диплом № 4837833
+                                                .cabinet__documents-table-price 140 ₽
+                                        .cabinet__documents-buttons 
+                                            button(type="button").cabinet__documents-button Оплатить
+                                            input(type="text" placeholder="Ввести промокод").cabinet__documents-input
+                                            p.cabinet__documents-total Итого: 420 ₽
+                                        p.cabinet__documents-p Можно выбрать удобный способ оплаты:
+                                        .cabinet__documents-payment 
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/visa.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/mastercard.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/sbp.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/mir.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/umoney.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/maestro.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/alphabank.png", alt="" draggable="false")
+                                            .cabinet__documents-payment-item 
+                                                img(src="@img/nalichka.png", alt="" draggable="false")
             include components/footer 
             +footer
         script(src="js/app.min.js") 
