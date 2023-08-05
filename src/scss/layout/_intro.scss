@@ -7,6 +7,9 @@
         @include resa('padding-top', 55px);
         @include resa('padding-bottom', 30px);
     }
+    &_admin{
+        @include res('min-height', 344px);
+    }
     &_publications{
         padding-bottom: 0;
     }
@@ -58,9 +61,24 @@
     }
     &__breadcrumbs{
         @include res('min-height', 22px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @include media(576){
             @include resa('min-height', 15px);
+            flex-direction: column;
+            align-items: flex-start;
             order: -3;
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @include res('gap', 3px);
+            flex-wrap: wrap;
+            @include media(576){
+                @include resa('gap', 3px);
+            }
         }
         &-item{
             color: #FFF;
@@ -75,6 +93,18 @@
             }
             &.active{
                 font-weight: 500;
+            }
+        }
+        &-btn{
+            color: #325CFE;
+            @include res('font-size', 14px);
+            font-style: normal;
+            font-weight: 500;
+            text-decoration: none;
+            @include res('line-height', 24px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('line-height', 24px);
             }
         }
     }
