@@ -78,6 +78,20 @@
             }
         }
     }
+    &__edition{
+        &::before{
+            display: none;
+        }
+        .people{
+            &__wrapper{
+                &::before{
+                    @include res('top', -78px);
+                    @include res('width', 290px);
+                    @include res('height', 480px);
+                }
+            }
+        }
+    }
     &__title{
         position: relative;
         @include res('padding-top', 58px);

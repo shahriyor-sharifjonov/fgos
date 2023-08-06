@@ -1,4 +1,11 @@
 .accept{
+    &__edition{
+        .accept{
+            &__body{
+                @include res('padding-right', 50px);
+            }
+        }
+    }
     &__body{
         @include res('padding-top', 65px);
         @include res('padding-bottom', 55px);
