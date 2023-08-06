@@ -116,6 +116,52 @@
         @include res('gap', 30px);
         &-content{
             @include res('width', 400px);
+            display: flex;
+            flex-wrap: wrap;
+            @include res('column-gap', 20px);
+            @include res('row-gap', 22px);
+        }
+        &-doc{
+            @include res('border-radius', 10px);
+            background: #FFF;
+            overflow: hidden;
+            box-shadow: 0px 0px .5208333333vw 0px rgba(2, 2, 2, 0.10);
+            @include res('padding-top', 14px);
+            @include res('padding-left', 16px);
+            @include res('padding-right', 16px);
+            @include res('padding-bottom', 5px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @include res('width', 190px);
+        }
+        &-chk{
+            @include res('margin-bottom', 10px);
+            @include res('width', 15px);
+            @include res('height', 15px);
+            @include res('border-radius', 4px);
+            border: solid #325CFE;
+            @include res('border-width', 1px);
+            appearance: none;
+            background: #FFF;
+            position: relative; 
+            cursor: pointer;
+            &:checked::before{
+                opacity: 1;
+                visibility: visible;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('../img/chk.svg') center / cover no-repeat;
+                opacity: 0;
+                visibility: hidden;
+                transition: 100ms ease-out;
+            }
         }
         &-info{
             @include res('width', 390px);

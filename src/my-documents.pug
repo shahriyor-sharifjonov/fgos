@@ -14,16 +14,44 @@ html(lang="en")
                 include components/intro 
                 +introAdmin 
                 section.cabinet 
-                    .cabinet__body.container 
+                    .cabinet__body.container  
                         include components/cabinetSidebar 
                         +cabinetSidebar 
                         .cabinet__content
                             .cabinet__item  
                                 include components/cabinetHeader 
-                                +cabinetHeader 
+                                +cabinetHeader  
                                 h1.cabinet__title Дипломы к оплате: 
                                 .cabinet__documents 
                                     .cabinet__documents-content 
+                                        .cabinet__documents-doc 
+                                            input(type="checkbox").cabinet__documents-chk 
+                                            .cabinet__documents-doc-img 
+                                                img(src="@img/document.png", alt="" draggable="false")
+                                            button(type="button").cabinet__documents-doc-btn Получить бесплатно
+                                            button(type="button").cabinet__documents-doc-btn Оплатить бонусами
+                                            button(type='button').cabinet__documents-doc-delete Удалить
+                                        .cabinet__documents-doc 
+                                            input(type="checkbox").cabinet__documents-chk 
+                                            .cabinet__documents-doc-img 
+                                                img(src="@img/document.png", alt="" draggable="false")
+                                            button(type="button").cabinet__documents-doc-btn Получить бесплатно
+                                            button(type="button").cabinet__documents-doc-btn Оплатить бонусами
+                                            button(type='button').cabinet__documents-doc-delete Удалить
+                                        .cabinet__documents-doc 
+                                            input(type="checkbox").cabinet__documents-chk 
+                                            .cabinet__documents-doc-img 
+                                                img(src="@img/document.png", alt="" draggable="false")
+                                            button(type="button").cabinet__documents-doc-btn Получить бесплатно
+                                            button(type="button").cabinet__documents-doc-btn Оплатить бонусами
+                                            button(type='button').cabinet__documents-doc-delete Удалить
+                                        .cabinet__documents-doc 
+                                            input(type="checkbox").cabinet__documents-chk 
+                                            .cabinet__documents-doc-img 
+                                                img(src="@img/document.png", alt="" draggable="false")
+                                            button(type="button").cabinet__documents-doc-btn Получить бесплатно
+                                            button(type="button").cabinet__documents-doc-btn Оплатить бонусами
+                                            button(type='button').cabinet__documents-doc-delete Удалить
                                     .cabinet__documents-info
                                         h2.cabinet__documents-title Поздравляем! Вы создали 1 документ и участвуете в акции "Третий документ в заказе - в подарок"!
                                         p.cabinet__documents-p Создайте еще один документ и получите диплом в подарок.
@@ -53,21 +81,21 @@ html(lang="en")
                                         p.cabinet__documents-p Можно выбрать удобный способ оплаты:
                                         .cabinet__documents-payment 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/visa.png", alt="" draggable="false")
+                                                img(src="@img/visa.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/mastercard.png", alt="" draggable="false")
+                                                img(src="@img/mastercard.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/sbp.png", alt="" draggable="false")
+                                                img(src="@img/sbp.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/mir.png", alt="" draggable="false")
+                                                img(src="@img/mir.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/umoney.png", alt="" draggable="false")
+                                                img(src="@img/umoney.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/maestro.png", alt="" draggable="false")
+                                                img(src="@img/maestro.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/alphabank.png", alt="" draggable="false")
+                                                img(src="@img/alphabank.png", alt="" draggable="false") 
                                             .cabinet__documents-payment-item 
-                                                img(src="@img/nalichka.png", alt="" draggable="false")
+                                                img(src="@img/nalichka.png", alt="" draggable="false") 
             include components/footer 
             +footer
         script(src="js/app.min.js") 
