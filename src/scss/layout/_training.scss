@@ -10,6 +10,21 @@
             @include resa('padding-bottom', 20px);
         }
     }
+    &__media{
+        &::before{
+            content: '';
+            position: absolute;
+            @include res('top', -317px);
+            left: 0;
+            @include res('width', 1180px);
+            @include res('height', 573px);
+            background: url('../img/training-before-2.png') center / cover no-repeat;
+            z-index: -1;
+            @include media(575){
+                display: none;
+            }
+        }
+    }
     &__row{
         display: flex;
         align-items: flex-start;

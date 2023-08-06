@@ -12,17 +12,23 @@ html(lang="en")
             +header 
             main.main 
                 include components/intro 
-                +media-intro
+                +edition-intro
                 include components/teachers
-                +media-teachers
+                +edition-teachers
+                include components/tutorial
+                +tutorial
                 include components/training
                 +media-training
                 include components/accept
-                +media-accept
+                +edition-accept
                 include components/people
-                +publications-people
+                +edition-people
+                include components/samples 
+                +edition-samples
+                include components/diplomas 
+                +edition-diplomas
                 include components/patterns
-                +media-patterns 
+                +edition-patterns 
                 include components/templates
                 +templates 
                 include components/reviews 
@@ -31,4 +37,4 @@ html(lang="en")
                 +faq 
             include components/footer 
             +footer
-        script(src="js/app.min.js") 
+        script(src="js/app.min.js")

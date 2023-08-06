@@ -24,9 +24,12 @@
             @include res('bottom', -97px);
             @include res('width', 1490px);
             @include res('height', 240px);
+            @include res('border-top-left-radius', 30px);
+            @include res('border-bottom-left-radius', 30px);
             @include media(575){
                 width: 100%;
                 @include resa('height', 100px);
+                border-radius: 0;
             }
         }
         .people{
@@ -71,6 +74,20 @@
                 width: calc(50% - 0.521vw);
                 @include media(575){
                     width: 100%;
+                }
+            }
+        }
+    }
+    &__edition{
+        &::before{
+            display: none;
+        }
+        .people{
+            &__wrapper{
+                &::before{
+                    @include res('top', -78px);
+                    @include res('width', 290px);
+                    @include res('height', 480px);
                 }
             }
         }

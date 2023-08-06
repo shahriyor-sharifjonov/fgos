@@ -254,6 +254,14 @@
             }
         }
     }
+    &__edition{
+        @include res('padding-bottom', 150px);
+        .publications{
+            &__row{
+                margin-top: 0;
+            }
+        }
+    }
     &__title{
         color: #FFF;
         @include res('font-size', 40px);

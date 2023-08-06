@@ -425,3 +425,123 @@ mixin media-teachers()
                             p.teachers__subtitle Бесплатное участие
                     .teachers__image 
                         img(src="@img/media-girl.png", alt="" draggable="false")
+                .teachers__row 
+                    .teachers__item
+                        h2.teachers__title Для публикации Вашей статьи на потрале заполните форму:
+                        .teachers__media-row
+                            .teachers__left 
+                                .teachers__flex 
+                                    form(action="").teachers__form
+                                        input(type="text" placeholder="Введите ваше имя, фамилию и отчество" required).teachers__input
+                                        input(type="email" placeholder="Введите ваш e-mail" required).teachers__input
+                                        input(type="text" placeholder="Введите тему вашей работы" required).teachers__input
+                                        p.teachers__form-subtitle Прикрепите файл со статьей:
+                                        p.teachers__form-info Максимальный размер файла: 20МБ
+                                        .teachers__texts 
+                                            a(href="#!").teachers__link
+                                                img(src="@img/clip.svg", alt="" draggable="false")
+                                                | Прикрепить конкурсную работу
+                                            p.teachers__info Сейчас файл не выбран
+                            .teachers__right    
+                                .teachers__subtitles
+                                    p.teachers__right-p Вы получите такое свидетельство
+                                .teachers__diploma
+                                    img(src="@img/patterns-img.png", alt="" draggable="false")
+                        h2.teachers__title.sm Краткое описание Вашей статьи:
+                        .teachers__form-img 
+                            img(src="@img/form.png", alt="" draggable="false")
+                        p.teachers__txt Символов: 0
+                        .teachers__checkbox 
+                            input(type="checkbox" id="checkbox1" required).teachers__checkbox-input
+                            label(for="checkbox1").teachers__label Опубликовать на моей странице социальной сети 
+                        button(type="submit").teachers__btn Опубликовать статью на сайте
+
+mixin edition-teachers()
+    .teachers.teachers__olympiads.teachers__media.teachers__edition 
+        .teachers__body.container 
+            .teachers__wrapper 
+                .teachers__row 
+                    .teachers__item 
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-1.png", alt="" draggable="false")
+                            p.teachers__subtitle ОфициальнЫЕ ДОКУМЕНТЫ
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-2.png", alt="" draggable="false")
+                            p.teachers__subtitle УДОБНО, ПРОСТО, быстро
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-4.svg", alt="" draggable="false")
+                            p.teachers__subtitle сборник через 4,5 дня
+                        .teachers__top 
+                            .teachers__img 
+                                img(src="@img/teachers-img-3.png", alt="" draggable="false")
+                            p.teachers__subtitle более 7 000 публикаций
+                    .teachers__image 
+                        img(src="@img/media-girl.png", alt="" draggable="false")
+                .teachers__row 
+                    .teachers__item
+                        h2.teachers__title Рассчитайте стоимость публикации #[br] Вашей статьи:
+                        .teachers__media-row
+                            .teachers__left 
+                                .teachers__flex 
+                                    form(action="").teachers__form
+                                        p.teachers__form-subtitle.sm Прикрепите файл со статьей #[span (.doc, .docx, .odt):]
+                                        p.teachers__form-info Лист А4/150 рублей, но не менее 300 рублей
+                                        .teachers__texts 
+                                            a(href="#!").teachers__link
+                                                img(src="@img/clip.svg", alt="" draggable="false")
+                                                | Прикрепить конкурсную работу
+                                            p.teachers__info Сейчас файл не выбран
+                                        p.teachers__form-subtitle.sm Требуется ли печатный сборник:
+                                        p.teachers__form-info Стоимость каждого печатного издания - 400 рублей.
+                                        .edition__row
+                                            .edition__checkbox
+                                                p.edition__checkbox-p.first Да
+                                                .edition__checkbox-content
+                                                    input(type="checkbox" checked).edition__checkbox-input
+                                                p.edition__checkbox-p.sec Нет
+                                            .edition__content 
+                                                p.edition__desc Количество сборников:
+                                                button(type="button").edition__button.minus -
+                                                p.edition__num 1
+                                                button(type="button").edition__button.plus +
+                                        button(type="button").edition__btn Рассчитать стоимость
+                            .teachers__right   
+                                .teachers__diploma 
+                                    img(src="@img/edition-diploma.png", alt="" draggable="false")
+                        h2.teachers__title Для публикации Вашей статьи в печатном издании заполните форму:
+                        p.teachers__right-p Получите книгу со своей статьей, свидетельство о публикации и справку: 
+                        .teachers__media-row
+                            .teachers__left 
+                                .teachers__flex 
+                                    form(action="").teachers__form
+                                        select(name="teachersSelect" id="select1").edition__select
+                                            option(value="0").edition__option Опубликовал  
+                                            option(value="1").edition__option Опубликовал  
+                                            option(value="2").edition__option Опубликовал  
+                                            option(value="3").edition__option Опубликовал  
+                                            option(value="4").edition__option Опубликовал  
+                                        input(type="text" placeholder="Введите ФИО автора (соавторов)" required).teachers__input
+                                        input(type="text" placeholder="Название учреждения, населенный пункт" required).teachers__input
+                                        input(type="text" placeholder="Название Вашей работы" required).teachers__input
+                                        select(name="teachersSelect" id="select2").edition__select
+                                            option(value="0").edition__option Выберите тип материала
+                                            option(value="1").edition__option Материал 
+                                            option(value="2").edition__option Материал  
+                                            option(value="3").edition__option Материал  
+                                            option(value="4").edition__option Материал  
+                                        input(type="number" placeholder="Укажите Ваш телефон" required).teachers__input
+                                        p.teachers__right-p Мы вышлем Вам СМС уведомление о готовности сборника
+                                        button(type="submit").teachers__btn Опубликовать статью на сайте
+                            .teachers__right   
+                                .teachers__diploma.second 
+                                    img(src="@img/edition-diploma-2.png", alt="" draggable="false")
+                                p.edition__right-subtitle Выберите внешний вид #[span.bold свидетельства ] #[br] #[span (можно выбрать справку по кнопке ниже)]
+                                p.edition__right-desc Выберите режим предпросмотра:
+                                .edition__right-row 
+                                    p.edition__right-p Свидетельство
+                                    .edition__checkbox-content.sm
+                                        input(type="checkbox" checked).edition__checkbox-input.sm
+                                    a(href="#!").edition__link Справка 
